@@ -39,7 +39,7 @@ body {
 
 #### position 사용 (ie7+)
 
-1번 방법을 호환성 문제로 사용하지 못할 경우에 쓴다. 하단 footer를 ```position:absolute; bottom:0;```  으로 제어하고 
+1번 방법을 호환성 문제로 사용하지 못할 경우에 쓴다. 하단 footer를 ```position:absolute; bottom:0;```  으로 제어하고 본문에 ```min-height:100%``` 를 적용한다.
 
 ```css
 html,
