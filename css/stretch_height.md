@@ -37,38 +37,20 @@ body {
 
 
 
-#### position 사용 (ie7+)
+#### margin, padding 사용 (ie7+)
 
-1번 방법을 호환성 문제로 사용하지 못할 경우에 쓴다. 하단 footer를 ```position:absolute; bottom:0;```  으로 제어하고 본문에 ```min-height:100%``` 를 적용한다.
+1번 방법을 호환성 문제로 사용하지 못할 경우에 쓴다. html, body부터 ```height:100%``` 를 적용하고, 본문(container) 에 ```min-height:100%``` 를 적용한 뒤 header, footer에 맞는 ```margin``` 값을 마이너스로 주고, ```padding``` 값을 추가한다.
 
 ```css
-html,
-body {
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
+* {margin:0; padding:0}
+html, body {height:100%}
 
-.header {
-  width: 100%;
-  height: 50px;
-  background: #ccc;
-}
-
-.container {
-  height: auto;
-  min-height: 100%;
-  padding-bottom: 50px;
-  background: #999;
-}
-
-.footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 50px;
-  background: #ddd;
-}
+#wrap {height:100%}
+#header {position:relative; height:100px; background:#7bb3c3}
+#container {min-height:100%; margin:-100px 0 -70px; background:#fff}
+.container_inner {padding:100px 0 70px}
+#footer {height:70px; background:#7b8fc3}
 
 ```
 
+<script async src="//jsfiddle.net/sumim/n6z3hpd9/1/embed/"></script>
