@@ -1,6 +1,8 @@
 # [CSS] grid 레이아웃 정리 (1) 부모 요소
 
 > CSS3 grid 레이아웃의 정의 및 부모 요소 속성 정리
+>
+> 블로그 포스트 : [[CSS] grid 레이아웃 정리 (1) 부모 요소](https://sumim00.github.io/css/2019/01/25/css-grid-1/) ,  [[CSS] grid 레이아웃 정리 (2) 자식 요소](https://sumim00.github.io/css/2019/01/30/css-grid-2/)
 
 <br/>
 
