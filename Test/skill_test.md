@@ -5,7 +5,7 @@
 | 11  | 12  | <del>13</del>  | <del>14</del>  | <del>15</del>  | <del>16</del>  | <del>17</del>         |
 | <del>18</del> | <del>19</del> | 20 | <del>21</del> | <del>22</del> | <del>23</del> | <del>24</del>         |
 | <del>25</del> | 26 | <del>27</del> | <del>28</del> | <del>29</del> | <del>30</del> | <del>31</del>         |
-| <del>1</del>  | <del>2</del> | <del>3</del>  | <del>4</del>  | 5   | 6   | 7 |
+| <del>1</del>  | <del>2</del> | <del>3</del>  | <del>4</del>  | <del>5</del>   | 6   | 7 |
 | 8 | 9 | 10 | 11 | 12 | 13 | 14 |
 
 
@@ -135,5 +135,10 @@
 
 
 ### 4/4 (D-11)
+
+- 4과목 진행중
+
+
+### 4/5 (D-10)
 
 - 4과목 진행중
