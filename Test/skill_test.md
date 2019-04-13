@@ -6,7 +6,7 @@
 | <del>18</del> | <del>19</del> | 20 | <del>21</del> | <del>22</del> | <del>23</del> | <del>24</del>         |
 | <del>25</del> | 26 | <del>27</del> | <del>28</del> | <del>29</del> | <del>30</del> | <del>31</del>         |
 | <del>1</del>  | <del>2</del> | <del>3</del>  | <del>4</del>  | <del>5</del>   | 6   | <del>7</del> |
-| <del>8</del> | <del>9</del> | <del>10</del> | <del>11</del> | <del>12</del> | 13 | 14 |
+| <del>8</del> | <del>9</del> | <del>10</del> | <del>11</del> | <del>12</del> | <del>13</del> | 14 |
 
 
 
@@ -177,3 +177,9 @@
 
 - 지난 모의고사에서 부족했던 1,2단원 복습
 - sql은 철자 하나만 틀려도 오답이기에 오늘 다시 제대로 공부했다.
+
+
+## 4/13 (D-1)
+
+- 최종점검.
+- 부족한 부분들 체크하고 공부한 지 꽤 돼서 잊혀진 파트들도 다시 공부했다. 내일 잘 할 수 있을지 매우매우 걱정이다ㅠㅠ
