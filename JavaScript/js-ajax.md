@@ -52,3 +52,39 @@ window.location.hash : window는 생략 가능, url에서 해시에 해당하는
 location.hash.substr(1) : substr는 string 중 일부만 가져오는 함수, 예시의 경우 1부터 끝까지 가져온다.
 
 #! : 해시뱅, 해시뱅을 이용한 방식은 검색엔진 최적화가 안되기 때문에, 최근에는 pjax 를 이용하고 있음.
+
+
+```
+function fetchPage(name){
+    fetch(name).then(function(response){
+      response.text().then(function(text){
+        document.querySelector('article').innerHTML = text;
+      })
+    });
+  }
+  if(location.hash){
+    fetchPage(location.hash.substr(2));
+  } else {
+    fetchPage('welcome');
+  }
+  fetch('list').then(function(response){
+    response.text().then(function(text){
+      var items = text.split(',');
+      var i = 0;
+      var tags = '';
+      while(i<items.length){
+        var item = items[i];
+        item = item.trim();
+        var tag = '<li><a href="#!'+item+'" onclick="fetchPage(\''+item+'\')">'+item+'</a></li>';
+        tags = tags + tag;
+        i = i + 1;
+      }
+      document.querySelector('#nav').innerHTML = tags;
+    })
+  });
+```
+
+
+split(',') : 괄호 내 요소, 여기서는 따옴표를 기준으로 문장을 나눠서 배열에 저장한다. 
+
+trim() : 요소의 공백을 제거한다.
