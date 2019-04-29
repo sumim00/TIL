@@ -88,3 +88,14 @@ function fetchPage(name){
 split(',') : 괄호 내 요소, 여기서는 따옴표를 기준으로 문장을 나눠서 배열에 저장한다. 
 
 trim() : 요소의 공백을 제거한다.
+
+
+#### Polyfill
+
+정의 : 웹 개발에서 기능을 지원하지 않는 웹 브라우저 상의 기능을 구현하는 코드
+
+##### fetch API polyfill cdn 주소
+
+<script src="https://cdn.jsdelivr.net/npm/promise-polyfill@8.1/dist/polyfill.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@3.0/dist/fetch.umd.min.js"></script>
