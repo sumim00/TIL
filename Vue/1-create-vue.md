@@ -59,16 +59,6 @@ yarn serve
 
 
 
-라우터 설치하기
-
-```powershell
-vue add router
-# OR
-npm install vue-router
-```
-
-
-
 빌드하기
 
 ```powershell
