@@ -49,7 +49,7 @@ vue ui
 
 
 
-서버에서 실행하기
+로컬 서버에서 실행하기
 
 ```powershell
 npm run serve
