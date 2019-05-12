@@ -23,3 +23,7 @@
 ### Refer
 
 <https://github.com/w3c/webcomponents> 
+
+<https://d2.naver.com/helloworld/188655> 
+
+<https://developer.mozilla.org/ko/docs/Web/Web_Components> 
