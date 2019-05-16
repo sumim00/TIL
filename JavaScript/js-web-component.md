@@ -20,9 +20,14 @@
 
 
 
-### Custom Elements
+### 폴리머
 
 
+구글이 웹 컴포넌트의 규격에 따라 구현한 것이 폴리머다.
+폴리머는 DOM을 템플릿화 하는 것을 목적으로 하며, Material Design을 기반으로 한다. 또한 JavaScript로 만들어졌다.
+
+
+https://www.polymer-project.org/
 
 
 
