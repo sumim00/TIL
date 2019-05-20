@@ -84,6 +84,17 @@ i case insensitive search
 x(?=y) y가 뒤따라오는 x에만 대응한다.
 
 
+
+###정규식에서 쓰이는 메서드
+exec : 대응되는 문자열을 찾는 메서드. 정보를 갖고 있는 배열을 반환하고 없으면 null을 반환.
+text : 대응되는 문자열을 찾는 메서드. true 또는 false를 반환.
+match : 대응되는 문자열을 찾는 메서드. exec와 기능 동일.
+search : 대응된 일부의 인덱스를 반환. 없으면 -1 반환.
+replace : 대응되는 문자열을 찾아 다른 문자열로 치환.
+split : 정규식 혹은 문자열로 대상 문자열을 나누어 배열로 반환. 
+
+
+
 ## Refer
 
 [MDN 정규 표현식](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/%EC%A0%95%EA%B7%9C%EC%8B%9D)
