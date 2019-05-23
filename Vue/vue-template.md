@@ -11,7 +11,7 @@ Mustache 구문 (이중 중괄호 구문) 좌우 구분자로 사용하는기호
 ```vue
 <template>
     <div id="app">
-        Hello {{ message }}
+        Hello {{ msg }}
     </div>
 </template>
 
@@ -19,7 +19,7 @@ Mustache 구문 (이중 중괄호 구문) 좌우 구분자로 사용하는기호
 export default {
     data() {
         return {
-            message: 'Vue.js'
+            msg: 'Vue.js'
         }
     }
 }
