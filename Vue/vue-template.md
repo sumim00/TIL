@@ -1,10 +1,35 @@
-## [Vue.js] 템플릿 문법
+# [Vue.js] 템플릿 문법
+
+### 템플릿 문법이란
+
+Vue.JS는 렌더링 된 DOM과 Vue 인스턴스의 데이터에 바인딩 할 수 있는 **HTML 기반의 문법**을 제공.
+
+Vue.JS는 내부적으로 템플릿 문법을 가상 DOM으로 리턴하는 render 함수로 컴파일 함.
+
+가상 DOM을 이용하여 최소한의 DOM을 조작하고 성능 부하를 최소화한다.
 
 
 
-### **Mustache 템플릿 문법** 
+------
 
-Mustache 구문 (이중 중괄호 구문) 좌우 구분자로 사용하는기호가 콧수염 모양같아서 붙여진 이름이다.
+
+
+### 템플릿 문법1. 보간법 (Interpolation, 값 대입)
+
+Vue 인스턴스에 있는 데이터를 HTML 템플릿에 표현하기 위해 사용한다.
+
+콧수염을 닮은 Mustache {{ }} 구문을 사용하며, 가장 기본적인 데이터 바인딩 체계.
+
+| Name                   | Code                                                         |
+| ---------------------- | ------------------------------------------------------------ |
+| Text                   | <p> 메시지 : {{ msg }} </p><p *v-once*> 메시지 한 번만 : {{ msgOnce }} </p> |
+| Raw HTML               | <p> Mustache: {{ blueMsg }} </p><p> v-html directive: <span *v-html*="blueMsg"> {{ blueMsg }} </span></p> |
+| Attribute              | <p *v-bind*:*id* = "id"> ... </p>                            |
+| JavaScript 표현식 사용 | <p> {{ number }} + 1 = {{ number + 1 }} </p><img *v-bind*:*src* = "feel?smile:bad"/><p> Reverse : {{ *reverse**.**split*('')*.**reverse*()*.**join*('') }} </p> |
+
+
+
+### Text
 
 {{  }} 사이에 변수 이름을 입력하면 해당 변수에 해당하는 데이터를 불러와 [HTML 이스케이프][1]로 출력된다. HTML 이스케이프 되지 않는 문자열을 출력하고 싶다면 {{{ }}} 문법을 사용하면 된다.
 
@@ -33,7 +58,9 @@ export default {
 <span v-once>변경되지 않는 내용 : {{ message }}</span>
 ```
 
-#### 원시 HTML
+
+
+#### Raw HTML (원시 HTML)
 
 Mustache 구문은 HTML이 아닌 일반 텍스트로 데이터를 해석하기 때문에 HTML 태그나 엔티티 기호 등이 데이터가 되면 그대로 출력된다. HTML 이스케이프로 출력해야할 경우엔 `v-html` 디렉티브를 사용한다.
 
@@ -44,11 +71,26 @@ Mustache 구문은 HTML이 아닌 일반 텍스트로 데이터를 해석하기 
 
 
 
+------
+
+
+
 ### 디렉티브
 
-디렉티브는 `v-` 접두사가 있는 특수 속성이다. 디렉티브의 역할은 표현식의 값이 변경될 때 즉시 DOM에 적용하는 일이다.
+Vue에서 제공하는 특별한 속성.   `v- `접두어를 갖는다.
+
+디렉티브의 속성 값이 변경될 때, DOM과 바인딩하여 DOM을 변경하는 역할.
+
+| Name   | Code                                                         |
+| ------ | ------------------------------------------------------------ |
+| v-if   | <p *v-if* = "seen"> 이제 나를 볼 수 있어요 </p>              |
+| v-bind | <a *v-bind*:*href* = "url">...</a><a :*href* = "url">...</a> |
+| v-on   | <button *v-on*:*click* = "helloEvent"> … </button><button @*click* = "helloEvent"> ... </button> |
+| 수식어 | <form *v-on*:*submit*.*prevent* = "onSubmit"> ... </form>    |
 
 
+
+#### v-if
 
 `v-if`는 조건부의 내용에 따라 제거되었다가 새로 생성되고,
 
@@ -60,7 +102,7 @@ Mustache 구문은 HTML이 아닌 일반 텍스트로 데이터를 해석하기 
 
 
 
-### 전달인자
+#### 전달인자
 
 일부 디렉티브는 콜론으로 표시되는 `전달인자`를 사용할 수 있다. `v-bind`의 경우 엘리먼트의 상태값을 바꿔줄 때 사용하는 디렉티브인데, 제이쿼리의 `attr`와 비슷한 역할이다. `v-on`은 이벤트를 핸들링하는 디렉티브이다. 
 
@@ -73,7 +115,7 @@ Mustache 구문은 HTML이 아닌 일반 텍스트로 데이터를 해석하기 
 
 
 
-### 수식어
+#### 수식어
 
 점으로 표시되는 특수 접미사.
 
@@ -87,7 +129,7 @@ Mustache 구문은 HTML이 아닌 일반 텍스트로 데이터를 해석하기 
 
 
 
-### 약어
+#### 약어
 
 `v-` 접두사는 Vue 특정 속성을 구분하기 위한 시각적인 신호 역할이다. 그러므로 `v-` 접두어의 필요성이 떨어지거나 장황하다고 느낄 때, 약어를 사용한다.
 
@@ -109,12 +151,18 @@ Mustache 구문은 HTML이 아닌 일반 텍스트로 데이터를 해석하기 
 
 ### Refer
 
-<https://kr.vuejs.org/v2/guide/syntax.html> 
+[Vue.JS 공식 가이드](<https://kr.vuejs.org/v2/guide/syntax.html> )
+
+[자바스크립트 프레임워크 소개 3 - Vue.js : TOAST Meetup]( <https://meetup.toast.com/posts/99>  )
+
+[Vue.js 입문서 - 프론트엔드 개발자를 위한 : Captain Pangyo](<https://joshua1988.github.io/web-development/vuejs/vuejs-tutorial-for-beginner/>)
+
+[리액트에 대해서 그 누구도 제대로 설명하기 어려운 것 – 왜 Virtual DOM 인가? : Velopert]( <https://velopert.com/3236> )
 
 <http://cigiko.cafe24.com/vue-js-%EB%B7%B0-%ED%85%9C%ED%94%8C%EB%A6%BF/> 
 
-<https://takeuu.tistory.com/33>
+https://takeuu.tistory.com/33
 
-<https://kr.vuejs.org/v2/guide/conditional.html>
+
 
 [1]: 특정 문자를 HTML로 변환하는 행위. `&lt;` 를 입력하면 `<`특수기호가 나오는 현상을 예로 들 수 있다.
