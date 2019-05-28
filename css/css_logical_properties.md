@@ -1,6 +1,6 @@
 ## CSS 논리적 속성 (CSS Logical Properties)
 
-#### 왜 논리적 속성이 중요할까
+### 왜 논리적 속성이 중요할까
 
 대부분의 개발자들은 CSS 위치를 지정할 때 `top`과 `bottom`, `left`와 `right`를 사용하곤 한다. 그러나 단순히 데이터를 송수신했던 이전의 웹과는 현대의 웹은 다양한 언어의 사람들이 소통하는 장이 되었고, 그만큼 개발에서도 그 다양성을 수용해야하는 시기이다.
 
@@ -10,11 +10,22 @@
 
 
 
+### 변경되는 속성 (라틴문화권 기준)
+
+| 물리적 속성 | 논리적 속성  |
+| ----------- | ------------ |
+| width       | inline-size  |
+| height      | block-size   |
+| left        | inline-start |
+| right       | inline-end   |
+| top         | block-start  |
+| bottom      | block-end    |
 
 
 
 
-### Refer
+
+## Refer
 
 [CSS Logical Properties and Values - CSS: Cascading Style Sheets | MDN](<https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Logical_Properties>)
 
