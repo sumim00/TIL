@@ -10,18 +10,81 @@
 
 
 
-### 변경되는 속성 (라틴문화권 기준)
+### 기존 속성과 비교
 
-| 물리적 속성 | 논리적 속성  |
-| ----------- | ------------ |
-| width       | inline-size  |
-| height      | block-size   |
-| left        | inline-start |
-| right       | inline-end   |
-| top         | block-start  |
-| bottom      | block-end    |
+박스 모델을 생각할 때, 우리는 일반적으로 아래와 같은 이미지를 떠올린다. x축과 y축이 절대적으로 정해져 있으며, 우리는 이를 기준으로 위아래, 좌우를 정의한다.
+
+![물리적 속성](https://cdn-images-1.medium.com/max/1000/1*1EXpE-VzrUbV69aeWf1IGA.png)
 
 
+
+그러나 논리적 속성에서는, 기존의 `top`, `bottom`, `left`, `right` 로 사고하는 형태에서 벗어나, 이를 `inline-start`, `inline-end`, `block-start`, `block-end` 로 대체한다.
+
+
+
+![논리적 속성](https://cdn-images-1.medium.com/max/1000/1*KD9Qh9eo04XLnbHu1_UOcg.png)
+
+
+
+### 논리적 속성, 속성값 정리
+
+영어(LTR) 기준:
+
+
+
+#### Sizing 속성
+
+`width` **=** `inline-size`
+
+`height` **=** `block-size`
+
+
+
+#### Margin, Border, Padding 속성
+
+##### margin
+
+`margin-block-start` = `margin-top`
+`margin-block-end` = `margin-bottom`
+`margin-inline-start` = `margin-left`
+`margin-inline-end` = `margin-right`
+
+
+
+##### padding
+
+`padding-block-start` = `padding-top`
+`padding-block-end` = `padding-bottom`
+`padding-inline-start` = `padding-left`
+`padding-inline-end` = `padding-right`
+
+
+
+##### border
+
+`border-block-start `= `border-top`
+`border-block-end` = `border-bottom`
+`border-inline-start` = `border-left`
+`border-inline-end` = `border-right`
+
+
+
+#### Float, Position 속성
+
+`top` = `inset-block-start`
+`bottom` = `inset-block-end`
+`left` = `inset-inline-start`
+`right` = `inset-inline-end`
+
+`float: left` = `float: inline-start`
+`float: right` = `float: inline-end`
+
+
+
+#### 기타
+
+`text-align :left` = `text-align: start;`
+`text-align :right` = `text-align: end;`
 
 
 
