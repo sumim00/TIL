@@ -14,31 +14,37 @@ Vue.js의 라이프사이클은 크게 생성(Create), 부착(Mount), 갱신(Upd
 
 
 
-## Creation : 컴포넌트 초기화 단계
+## Create : 컴포넌트 초기화 단계
 
 라이프사이클 가장 초기에 실행되는 단계. 컴포넌트가 DOM에 추가되기 전의 상태이다. 서버렌더링에서 지원되는 훅
 
 ### beforeCreate
 
+
+
 ### Created
 
 
 
-## Mounting : DOM 삽입 단계
+## Mount : DOM 삽입 단계
 
 서버렌더링에서 지원하지 않는다.
 
 ### beforeMount
 
+
+
 ### Mounted
 
 
 
-## Updating : Diff 및 재렌더링 단계
+## Update : Diff 및 재렌더링 단계
 
 컴포넌트에서 사용되는 반응형 속성들이 변경되거나 재렌더링이 발생하면 실행되는 단계. 서버렌더링에서는 호출되지 않는다.
 
 ### beforeUpdate
+
+
 
 ### Updated
 
@@ -49,6 +55,8 @@ Vue.js의 라이프사이클은 크게 생성(Create), 부착(Mount), 갱신(Upd
 인스턴스가 제거되는 단계.
 
 ### beforeDestroy
+
+
 
 ### Destroyed
 
