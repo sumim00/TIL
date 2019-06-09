@@ -28,7 +28,7 @@
 
 ### 논리적 속성, 속성값 정리
 
-영어(LTR) 기준:
+영어(LTR) 기준
 
 
 
@@ -71,10 +71,16 @@
 
 #### Float, Position 속성
 
+##### position
+
 `top` = `inset-block-start`
 `bottom` = `inset-block-end`
 `left` = `inset-inline-start`
 `right` = `inset-inline-end`
+
+
+
+##### float
 
 `float: left` = `float: inline-start`
 `float: right` = `float: inline-end`
