@@ -10,3 +10,15 @@
 | TextInput  | input 타입을 위한 컴포넌트                            |
 | ScrollView | 여러 컴포넌트와 뷰를 호스팅할 수 있는 스크롤 컨테이너 |
 | StyleSheet | CSS 스타일 설정을 위한 컴포넌트                       |
+
+
+
+UI
+
+| 컴포넌트명 | 설명                                 |
+| ---------- | ------------------------------------ |
+| Button     | 기본 버튼 컴포넌트                   |
+| Picker     | iOS와 Android 네이티브 피커 컴포넌트 |
+| Slider     | 범위를 선택할 때 사용한다.           |
+| Switch     | boolean속성 input을 사용할 수 있다.  |
+
