@@ -38,3 +38,35 @@ new Vue ({
 })
 ```
 
+
+
+#### 데이터 전달 : props를 이용
+
+```javascript
+Vue.component('child', {
+    props: ['myMessage'],
+    template: '<span>{{ myMessage }}</span>'
+})
+```
+
+```html
+<child my-message="안녕하세요!"></child>
+```
+
+
+
+#### 데이터 전달 : 동적 props 이용
+
+```html
+<div>
+    <input v-model="parentMsg">
+    <child :my-message="parentMsg"></child>
+</div>
+```
+
+
+
+
+
+
+
