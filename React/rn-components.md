@@ -94,3 +94,10 @@ import { 컴포넌트1, 컴포넌트2... } from "react-native"
 | StatusBar            | 앱 상태표시줄을 컨트롤할 수 있다.                            |
 | WebView              | 네이티브 뷰에서 웹 컨텐츠를 렌더링한다.                      |
 
+
+
+
+
+### Refer
+
+[React Native 공식 홈페이지 - Components and APIs](<https://facebook.github.io/react-native/docs/components-and-apis>)
