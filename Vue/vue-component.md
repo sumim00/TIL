@@ -40,6 +40,18 @@ new Vue ({
 
 
 
+*** `ul`, `ol`, `table`, `select` 와 같이 안에 특정 엘리먼트만 삽입 가능한 경우 `is` 속성을 이용하여 해결할 수 있다.
+
+```html
+<table>
+  <tr is="my-row"></tr>
+</table>
+```
+
+
+
+
+
 #### 데이터 전달 : props를 이용
 
 ```javascript
