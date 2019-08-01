@@ -1,14 +1,10 @@
 ## 리액트 네이티브 2. 컴포넌트
 
-
-
 #### 사용 방법
 
-```javascript
+```
 import { 컴포넌트1, 컴포넌트2... } from "react-native"
 ```
-
-
 
 #### 기본 컴포넌트
 
@@ -21,8 +17,6 @@ import { 컴포넌트1, 컴포넌트2... } from "react-native"
 | ScrollView | 여러 컴포넌트와 뷰를 호스팅할 수 있는 스크롤 컨테이너 |
 | StyleSheet | CSS 스타일 설정을 위한 컴포넌트                       |
 
-
-
 #### UI 컨트롤러
 
 | 컴포넌트명 | 설명                                 |
@@ -32,18 +26,14 @@ import { 컴포넌트1, 컴포넌트2... } from "react-native"
 | Slider     | 범위를 선택할 때 사용한다.           |
 | Switch     | boolean속성 input을 사용할 수 있다.  |
 
-
-
 #### 리스트 뷰
 
-`ScrollView`와 달리 스크린에서만 보여지는 요소들만 렌더링한다. 
+`ScrollView`와 달리 스크린에서만 보여지는 요소들만 렌더링한다.
 
 | 컴포넌트명  | 설명                                                |
 | ----------- | --------------------------------------------------- |
 | FlatList    | 스크롤이 가능한 리스트들을 렌더링하기 위한 컴포넌트 |
 | SectionList | `FlatList`와 비슷하나, 분리된 리스트들에 사용한다.  |
-
-
 
 #### iOS 컴포넌트 및 API
 
@@ -59,8 +49,6 @@ import { 컴포넌트1, 컴포넌트2... } from "react-native"
 | SegmentedControlIOS | iOS에서`UISegmentedControl`를 구현할 수 있다.                |
 | TabBarIOS           | iOS에서`UITabViewController`를 구현할 수 있다.               |
 
-
-
 #### 안드로이드 컴포넌트 및 API
 
 | 컴포넌트명          | 설명                                                    |
@@ -74,8 +62,6 @@ import { 컴포넌트1, 컴포넌트2... } from "react-native"
 | ToastAndroid        | 안드로이드 Toast 알림을 생성한다.                       |
 | ToolbarAndroid      | 안드로이드에서 `Toolbar`를 렌더링한다.                  |
 | ViewPagerAndroid    | 뷰의 좌우를 바꿀 수 있다.                               |
-
-
 
 #### 기타
 
@@ -94,10 +80,6 @@ import { 컴포넌트1, 컴포넌트2... } from "react-native"
 | StatusBar            | 앱 상태표시줄을 컨트롤할 수 있다.                            |
 | WebView              | 네이티브 뷰에서 웹 컨텐츠를 렌더링한다.                      |
 
-
-
-
-
 ### Refer
 
-[React Native 공식 홈페이지 - Components and APIs](<https://facebook.github.io/react-native/docs/components-and-apis>)
+[React Native 공식 홈페이지 - Components and APIs](https://facebook.github.io/react-native/docs/components-and-apis)
