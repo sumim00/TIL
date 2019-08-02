@@ -98,4 +98,4 @@ unsubscribe(); // 상태변경을 더 이상 받아보지 않는다.
 
 ### Refer
 
-<https://lunit.gitbook.io/redux-in-korean/basics/store>
+[Redux 공식 한글 문서](<https://lunit.gitbook.io/redux-in-korean/>)
