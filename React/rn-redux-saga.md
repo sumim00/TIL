@@ -1,6 +1,6 @@
 ## Redux-Saga
 
-data를 fetching하는 비동기 액션과 같이 단순하지 않은 작업들은 saga에서 작업하고, 액션에는 순수한 객체만 반환하게끔  돕는 리덕스 미들웨어.
+비동기 액션과 같이 단순하지 않은 사이드 이펙트는 saga에서 작업하고, 액션에는 순수한 객체만 반환하게끔  돕는 리덕스 미들웨어.
 
 Generators라는 ES6 기능을 활용.
 
@@ -25,8 +25,11 @@ $ yarn add redux-saga
 ```js
 export const FETCH_GUEST_REQUESTED = 'FETCH_GUEST_REQUESTED'
 
-export const fetchGuest = () => ({
-    type: FETCH_GUEST_REQUESTED
+export const fetchGuestList = (guestId) => ({
+    type: FETCH_GUEST_REQUESTED,
+    payload: {
+        guestId
+    }
 })
 ```
 
@@ -36,15 +39,18 @@ export const fetchGuest = () => ({
 
 ```js
 const INITIAL_STATE = {
-    guests: []
+    guestId: []
 }
 
-const reducer = (state = {}, action) => { 
-  switch (action.type) { 
-     case 'GET_NEWS': 
-        return {... state, loading : true}; 
-     기본값 : 
-        반환 상태; 
+const reducer = (state = INITIAL_STATE, { type, payload }) => { 
+  switch (type) { 
+     case 'FETCH_GUEST_REQUESTED': 
+        return {
+            ... state,
+            guestId: payload
+        }; 
+     default : 
+        return state
    } 
 }; 
 ```
@@ -55,11 +61,11 @@ const reducer = (state = {}, action) => {
 
 ```js
 function* fetchGuest() {
-    const list = yield call(Api.fetchList, action.payload.guestList)
+    const list = yield call(Api.fetchList, action.payload.guestId)
     try {
-        yield put({type: "FETCH_GUEST_SUCCEEDED", guest: guest})
+        yield put({type: "FETCH_GUEST_SUCCEEDED", payload: guestId})
     } catch (error) {
-        yield put({type: "FETCH_GUEST_FAILED", message: error.message});
+        yield put({type: "FETCH_GUEST_FAILED", payload: error});
     }
 }
 
