@@ -1,0 +1,813 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>정규표현식 (RegExp) · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="js-scope.html" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    CSS
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../css/css_naming.html">
+            
+                <a href="../css/css_naming.html">
+            
+                    
+                    CSS 방법론
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../css/css_animation.html">
+            
+                <a href="../css/css_animation.html">
+            
+                    
+                    animation, keyframe 속성
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../css/grid.html">
+            
+                <a href="../css/grid.html">
+            
+                    
+                    grid 속성
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../css/css_flex_vendor_prefix.html">
+            
+                <a href="../css/css_flex_vendor_prefix.html">
+            
+                    
+                    flex 속성 벤더 프리픽스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../css/css_sticky.html">
+            
+                <a href="../css/css_sticky.html">
+            
+                    
+                    sticky 속성
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    JavaScript
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.3.1" data-path="js-regex.html">
+            
+                <a href="js-regex.html">
+            
+                    
+                    정규표현식 (RegExp)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="js-scope.html">
+            
+                <a href="js-scope.html">
+            
+                    
+                    Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="js-return.html">
+            
+                <a href="js-return.html">
+            
+                    
+                    return의 역할
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="js-web-component.html">
+            
+                <a href="js-web-component.html">
+            
+                    
+                    웹 컴포넌트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="js-hoisting.html">
+            
+                <a href="js-hoisting.html">
+            
+                    
+                    Hoisting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="js-for.html">
+            
+                <a href="js-for.html">
+            
+                    
+                    for문
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    TypeScript
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../TypeScript/why_TypeScript.html">
+            
+                <a href="../TypeScript/why_TypeScript.html">
+            
+                    
+                    TypeScript란
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    React
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../React/rn-redux.html">
+            
+                <a href="../React/rn-redux.html">
+            
+                    
+                    Redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../React/rn-redux-saga.html">
+            
+                <a href="../React/rn-redux-saga.html">
+            
+                    
+                    Redux-saga
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Vue
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Vue/0-why-vue.html">
+            
+                <a href="../Vue/0-why-vue.html">
+            
+                    
+                    Vue란
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Vue/1-create-vue.html">
+            
+                <a href="../Vue/1-create-vue.html">
+            
+                    
+                    시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Vue/2-vue-router.html">
+            
+                <a href="../Vue/2-vue-router.html">
+            
+                    
+                    Vue 라우터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Vue/vue-component.html">
+            
+                <a href="../Vue/vue-component.html">
+            
+                    
+                    컴포넌트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../Vue/vue-computed-method-watch.html">
+            
+                <a href="../Vue/vue-computed-method-watch.html">
+            
+                    
+                    computed,method,watch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../Vue/vue-event.html">
+            
+                <a href="../Vue/vue-event.html">
+            
+                    
+                    event
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../Vue/vue-lifecycle.html">
+            
+                <a href="../Vue/vue-lifecycle.html">
+            
+                    
+                    lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../Vue/nuxt.html">
+            
+                <a href="../Vue/nuxt.html">
+            
+                    
+                    Nuxt.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    DB
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../DB/CRUD.html">
+            
+                <a href="../DB/CRUD.html">
+            
+                    
+                    CRUD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../DB/MongoDB.html">
+            
+                <a href="../DB/MongoDB.html">
+            
+                    
+                    MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../DB/NoSQL.html">
+            
+                <a href="../DB/NoSQL.html">
+            
+                    
+                    NoSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    etc.
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../etc/mvc-mvp-mvvm.html">
+            
+                <a href="../etc/mvc-mvp-mvvm.html">
+            
+                    
+                    디자인 패턴
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../etc/software_architecture.html">
+            
+                <a href="../etc/software_architecture.html">
+            
+                    
+                    소프트웨어 아키텍쳐
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../etc/git-flow.html">
+            
+                <a href="../etc/git-flow.html">
+            
+                    
+                    깃플로우
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../etc/app_accessibility.html">
+            
+                <a href="../etc/app_accessibility.html">
+            
+                    
+                    모바일 애플리케이션 접근성 지침 2.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../etc/storybook.html">
+            
+                <a href="../etc/storybook.html">
+            
+                    
+                    storybook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../etc/sql_commands.html">
+            
+                <a href="../etc/sql_commands.html">
+            
+                    
+                    SQL 명령문
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >정규표현식 (RegExp)</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xC815;&#xADDC;&#xD45C;&#xD604;&#xC2DD;-regexp">&#xC815;&#xADDC;&#xD45C;&#xD604;&#xC2DD; (RegExp)</h1>
+<h2 id="&#xC120;&#xC5B8;-&#xBC29;&#xBC95;">&#xC120;&#xC5B8; &#xBC29;&#xBC95;</h2>
+<pre><code class="lang-javascript"><span class="hljs-comment">// &#xB9AC;&#xD130;&#xB7F4; &#xBC29;&#xC2DD;</span>
+<span class="hljs-keyword">var</span> option1 = <span class="hljs-regexp">/cat/</span>;
+<span class="hljs-comment">// &#xC815;&#xADDC;&#xD45C;&#xD604;&#xC2DD; &#xC0DD;&#xC131;&#xC790; &#xD568;&#xC218; &#xC0AC;&#xC6A9;</span>
+<span class="hljs-keyword">var</span> option2 = <span class="hljs-keyword">new</span> <span class="hljs-built_in">RegExp</span>(<span class="hljs-string">&quot;cat&quot;</span>);
+</code></pre>
+<p>&#xCC28;&#xD6C4; &#xC815;&#xADDC;&#xD45C;&#xD604;&#xC2DD;&#xC744; &#xC218;&#xC815;&#xD558;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;&#xBA74; &#xB9AC;&#xD130;&#xB7F4; &#xBC29;&#xC2DD;&#xC744;, &#xC218;&#xC815;&#xC744; &#xD574;&#xC57C; &#xD558;&#xAC70;&#xB098; &#xB2E4;&#xB978; &#xBCC0;&#xC218;&#xC640; &#xD568;&#xAED8; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;&#xBA74; &#xC0DD;&#xC131;&#xC790; &#xD568;&#xC218;&#xB97C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xAC83;&#xC774; &#xC88B;&#xB2E4;.</p>
+<h2 id="&#xC815;&#xADDC;&#xD45C;&#xD604;&#xC2DD;-&#xBA54;&#xC11C;&#xB4DC;">&#xC815;&#xADDC;&#xD45C;&#xD604;&#xC2DD; &#xBA54;&#xC11C;&#xB4DC;</h2>
+<pre><code class="lang-javascript"><span class="hljs-built_in">console</span>.log(<span class="hljs-regexp">/cat/</span>.test(<span class="hljs-string">&quot;the cat says meow&quot;</span>));
+<span class="hljs-comment">// true</span>
+<span class="hljs-built_in">console</span>.log(<span class="hljs-regexp">/cat/</span>.test(<span class="hljs-string">&quot;the dog says bark&quot;</span>));
+<span class="hljs-comment">// false</span>
+</code></pre>
+<h2 id="&#xAE30;&#xBCF8;-regex">&#xAE30;&#xBCF8; RegEx</h2>
+<h3 id="symbols">Symbols</h3>
+<p>\ &#xD2B9;&#xC218;&#xBB38;&#xC790;&#xAC00; &#xC544;&#xB2CC; &#xBB38;&#xC790; &#xC55E;&#xC5D0; &#xC62C; &#xACBD;&#xC6B0; &apos;&#xD574;&#xB2F9; &#xBB38;&#xC790;&#xB294; &#xD2B9;&#xBCC4;&#xD558;&#xB2E4;&apos;&#xB294; &#xB73B;,</p>
+<p>   &#xD2B9;&#xC218;&#xBB38;&#xC790; &#xC55E;&#xC5D0; &#xC62C; &#xACBD;&#xC6B0; &apos;&#xD574;&#xB2F9; &#xBB38;&#xC790;&#xB294; &#xD2B9;&#xBCC4;&#xD558;&#xC9C0; &#xC54A;&#xB2E4;&apos;&#xB294; &#xB73B;.</p>
+<p>. &#xAC1C;&#xD589;&#xBB38;&#xC790;&#xB97C; &#xC81C;&#xC678;&#xD55C; &#xBAA8;&#xB4E0; &#xB2E8;&#xC77C; &#xBB38;&#xC790;&#xB97C; &#xC758;&#xBBF8;&#xD55C;&#xB2E4;. </p>
+<p>* &#xC55E;&#xC758; &#xD45C;&#xD604;&#xC2DD;&#xC774; 0&#xAC1C; &#xC774;&#xC0C1;&#xC774;&#xB2E4;.</p>
+<p>+ &#xC55E;&#xC758; &#xD45C;&#xD604;&#xC2DD;&#xC774; 1&#xAC1C; &#xC774;&#xC0C1;&#xC774;&#xB2E4;.</p>
+<p>? &#xC55E;&#xC758; &#xD45C;&#xD604;&#xC2DD;&#xC774; &#xC788;&#xC744; &#xC218;&#xB3C4; &#xC788;&#xACE0;, &#xC5C6;&#xC744; &#xC218;&#xB3C4; &#xC788;&#xB2E4;.</p>
+<p>^ &#xC785;&#xB825;&#xC758; &#xC2DC;&#xC791; &#xBD80;&#xBD84;&#xACFC; &#xB300;&#xC751;&#xB41C;&#xB2E4;.</p>
+<p>$ &#xC785;&#xB825;&#xC758; &#xB05D; &#xBD80;&#xBD84;&#xACFC; &#xB300;&#xC751;&#xB41C;&#xB2E4;.</p>
+<h3 id="charactop-groups">Charactop groups</h3>
+<p>\B &#xBB38;&#xC790;&#xC5F4;&#xC758; &#xCCAB; &#xBC88;&#xC9F8; &#xBB38;&#xC790;&#xAC00; &#xB2E8;&#xC5B4;&#xAC00; &#xC544;&#xB2CC; &#xACBD;&#xC6B0;, &#xD574;&#xB2F9; &#xBB38;&#xC790;&#xC758; &#xC55E;&#xBD80;&#xBD84;.</p>
+<p>&#xBB38;&#xC790;&#xC5F4;&#xC758; &#xB9C8;&#xC9C0;&#xB9C9; &#xBB38;&#xC790;&#xAC00; &#xB2E8;&#xC5B4;&#xAC00; &#xC544;&#xB2CC; &#xACBD;&#xC6B0;, &#xD574;&#xB2F9; &#xBB38;&#xC790;&#xC758; &#xB4B7;&#xBD80;&#xBD84;.</p>
+<p>&#xB450; &#xB2E8;&#xC5B4; &#xC0AC;&#xC774;&#xC5D0; &#xB300;&#xC751;.</p>
+<p>&#xB2E8;&#xC5B4; &#xBB38;&#xC790;&#xAC00; &#xC544;&#xB2CC; &#xB450; &#xBB38;&#xC790; &#xC0AC;&#xC774;&#xC5D0; &#xB300;&#xC751;.</p>
+<p>&#xBE48; &#xBB38;&#xC790;&#xC5F4;&#xC5D0; &#xB300;&#xC751;.</p>
+<p>\d &#xC22B;&#xC790; &#xBB38;&#xC790;. [0-9]&#xC640; &#xB3D9;&#xC77C;</p>
+<p>\D &#xC22B;&#xC790;&#xAC00; &#xC544;&#xB2CC; &#xBB38;&#xC790;. <sup><a href="#fn_0-9" id="reffn_0-9">0-9</a></sup>&#xC640; &#xB3D9;&#xC77C;</p>
+<p>\w &#xC601;&#xC22B;&#xC790; &#xBB38;&#xC790;. [A-Za-z0-9_]&#xC640; &#xB3D9;&#xC77C;</p>
+<p>\W &#xB2E8;&#xC5B4; &#xBB38;&#xC790;&#xAC00; &#xC544;&#xB2CC; &#xBB38;&#xC790;. <sup><a href="#fn_A-Za-z0-9_" id="reffn_A-Za-z0-9_">A-Za-z0-9_</a></sup>&#xC640; &#xB3D9;&#xC77C;</p>
+<p>[WYZ] &#xBB38;&#xC790;&#xC14B;&#xC73C;&#xB85C; &#xAD04;&#xD638; &#xC548;&#xC758; &#xC5B4;&#xB5A4; &#xBB38;&#xC790;&#xC640;&#xB3C4; &#xB300;&#xC751;&#xB41C;&#xB2E4;. [A-Z]&#xCC98;&#xB7FC; &#xBC94;&#xC704;&#xB97C; &#xC9C0;&#xC815;&#xD574;&#xC904; &#xC218;&#xB3C4; &#xC788;&#xB2E4;.</p>
+<p>[WYZ]+ &#xC138;&#xD2B8; &#xC548;&#xC5D0; &#xC788;&#xB294; &#xD558;&#xB098; &#xD639;&#xC740; &#xADF8; &#xC774;&#xC0C1;&#xC758; &#xC5B4;&#xB5A4; &#xAE00;&#xC790;&#xC640;&#xB3C4; &#xB300;&#xC751;&#xB41C;&#xB2E4;.</p>
+<p><sup><a href="#fn_A-Z" id="reffn_A-Z">A-Z</a></sup> &#xD558;&#xB098;&#xC758; &#xBB38;&#xC790; &#xC138;&#xD2B8; &#xC548;&#xC5D0;&#xC11C; ^&#xC758; &#xC758;&#xBBF8;&#xB294; &#xBD80;&#xC815;&#xC758; &#xC758;&#xBBF8;&#xC774;&#xB2E4;. &#xC5EC;&#xAE30;&#xC11C;&#xB294; &#xC5B4;&#xB5A4; &#xB300;&#xBB38;&#xC790;&#xC640;&#xB3C4; &#xB300;&#xC751;&#xB418;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;.</p>
+<h3 id="flag">Flag</h3>
+<p>g Global search</p>
+<p>i case insensitive search</p>
+<h3 id="advanced">Advanced</h3>
+<p>(x) &#xD3EC;&#xD68D;&#xAD04;&#xD638;. x&#xC5D0; &#xB300;&#xC751;&#xB418;&#xACE0; &#xAE30;&#xC5B5;&#xB418;&#xC5B4; &#xB098;&#xC911;&#xC5D0; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB2E4;.</p>
+<p>(?:x) &#xBE44;&#xD3EC;&#xD68D; &#xAD04;&#xD638;. x&#xC5D0; &#xB300;&#xC751;&#xB418;&#xC9C0;&#xB9CC; &#xB300;&#xC751;&#xB41C; &#xAC83;&#xC744; &#xAE30;&#xC5B5;&#xD558;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;.</p>
+<p>x(?=y) y&#xAC00; &#xB4A4;&#xB530;&#xB77C;&#xC624;&#xB294; x&#xC5D0;&#xB9CC; &#xB300;&#xC751;&#xD55C;&#xB2E4;.</p>
+<h3 id="&#xC815;&#xADDC;&#xC2DD;&#xC5D0;&#xC11C;-&#xC4F0;&#xC774;&#xB294;-&#xBA54;&#xC11C;&#xB4DC;">&#xC815;&#xADDC;&#xC2DD;&#xC5D0;&#xC11C; &#xC4F0;&#xC774;&#xB294; &#xBA54;&#xC11C;&#xB4DC;</h3>
+<p>exec : &#xB300;&#xC751;&#xB418;&#xB294; &#xBB38;&#xC790;&#xC5F4;&#xC744; &#xCC3E;&#xB294; &#xBA54;&#xC11C;&#xB4DC;. &#xC815;&#xBCF4;&#xB97C; &#xAC16;&#xACE0; &#xC788;&#xB294; &#xBC30;&#xC5F4;&#xC744; &#xBC18;&#xD658;&#xD558;&#xACE0; &#xC5C6;&#xC73C;&#xBA74; null&#xC744; &#xBC18;&#xD658;.
+text : &#xB300;&#xC751;&#xB418;&#xB294; &#xBB38;&#xC790;&#xC5F4;&#xC744; &#xCC3E;&#xB294; &#xBA54;&#xC11C;&#xB4DC;. true &#xB610;&#xB294; false&#xB97C; &#xBC18;&#xD658;.
+match : &#xB300;&#xC751;&#xB418;&#xB294; &#xBB38;&#xC790;&#xC5F4;&#xC744; &#xCC3E;&#xB294; &#xBA54;&#xC11C;&#xB4DC;. exec&#xC640; &#xAE30;&#xB2A5; &#xB3D9;&#xC77C;.
+search : &#xB300;&#xC751;&#xB41C; &#xC77C;&#xBD80;&#xC758; &#xC778;&#xB371;&#xC2A4;&#xB97C; &#xBC18;&#xD658;. &#xC5C6;&#xC73C;&#xBA74; -1 &#xBC18;&#xD658;.
+replace : &#xB300;&#xC751;&#xB418;&#xB294; &#xBB38;&#xC790;&#xC5F4;&#xC744; &#xCC3E;&#xC544; &#xB2E4;&#xB978; &#xBB38;&#xC790;&#xC5F4;&#xB85C; &#xCE58;&#xD658;.
+split : &#xC815;&#xADDC;&#xC2DD; &#xD639;&#xC740; &#xBB38;&#xC790;&#xC5F4;&#xB85C; &#xB300;&#xC0C1; &#xBB38;&#xC790;&#xC5F4;&#xC744; &#xB098;&#xB204;&#xC5B4; &#xBC30;&#xC5F4;&#xB85C; &#xBC18;&#xD658;. </p>
+<h2 id="refer">Refer</h2>
+<p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/%EC%A0%95%EA%B7%9C%EC%8B%9D" target="_blank">MDN &#xC815;&#xADDC; &#xD45C;&#xD604;&#xC2DD;</a></p>
+<p><a href="https://3jun.tistory.com/88" target="_blank">3jun - Javascript: &#xCD08;&#xBCF4;&#xC790;&#xB97C; &#xC704;&#xD55C; &#xC815;&#xADDC;&#xC2DD;(Regular Expressions) &#xBC30;&#xC6B0;&#xAE30;</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="js-scope.html" class="navigation navigation-next navigation-unique" aria-label="Next page: Scope">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"정규표현식 (RegExp)","level":"1.3.1","depth":2,"next":{"title":"Scope","level":"1.3.2","depth":2,"path":"JavaScript/js-scope.md","ref":"JavaScript/js-scope.md","articles":[]},"previous":{"title":"JavaScript","level":"1.3","depth":1,"ref":"","articles":[{"title":"정규표현식 (RegExp)","level":"1.3.1","depth":2,"path":"JavaScript/js-regex.md","ref":"JavaScript/js-regex.md","articles":[]},{"title":"Scope","level":"1.3.2","depth":2,"path":"JavaScript/js-scope.md","ref":"JavaScript/js-scope.md","articles":[]},{"title":"return의 역할","level":"1.3.3","depth":2,"path":"JavaScript/js-return.md","ref":"JavaScript/js-return.md","articles":[]},{"title":"웹 컴포넌트","level":"1.3.4","depth":2,"path":"JavaScript/js-web-component.md","ref":"JavaScript/js-web-component.md","articles":[]},{"title":"Hoisting","level":"1.3.5","depth":2,"path":"JavaScript/js-hoisting.md","ref":"JavaScript/js-hoisting.md","articles":[]},{"title":"for문","level":"1.3.6","depth":2,"path":"JavaScript/js-for.md","ref":"JavaScript/js-for.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"JavaScript/js-regex.md","mtime":"2019-05-23T14:17:02.851Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-12T06:52:09.333Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
