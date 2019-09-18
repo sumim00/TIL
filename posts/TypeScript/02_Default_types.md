@@ -38,3 +38,4 @@ function warnUser(): void {
 
 
 
+[기본 타입 - GitBook]([https://typescript-kr.github.io/pages/Basic%20Types.html](https://typescript-kr.github.io/pages/Basic Types.html))
