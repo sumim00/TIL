@@ -1,25 +1,34 @@
 # Summary
 
 * [Introduction](README.md)
-* CSS
+* ##### CSS
+  
   * [CSS 방법론](posts/css/css_naming.md)
   * [animation, keyframe 속성](posts/css/css_animation.md)
   * [grid 속성](posts/css/grid.md)
   * [flex 속성 벤더 프리픽스](posts/css/css_flex_vendor_prefix.md)
   * [sticky 속성](posts/css/css_sticky.md)
-* JavaScript
+* ##### JavaScript
+  
   * [정규표현식 (RegExp)](posts/JavaScript/js-regex.md)
   * [Scope](posts/JavaScript/js-scope.md)
   * [return의 역할](posts/JavaScript/js-return.md)
   * [웹 컴포넌트](posts/JavaScript/js-web-component.md)
   * [Hoisting](posts/JavaScript/js-hoisting.md)
   * [for문](posts/JavaScript/js-for.md)
-* TypeScript
+  * [Math 객체에서 자주 사용하는 메소드](posts/JavaScript/js-Math.md)
+  * [split(), splice(), slice() 정리](posts/JavaScript/js-slice.md)
+  * [sort() 함수](posts/JavaScript/js-sort.md)
+* ##### TypeScript
+  
   * [TypeScript란](posts/TypeScript/why_TypeScript.md)
-* React
+  * [타입 정의하기](posts/TypeScript/02_Default_types.md)
+* ##### React
+  
   * [Redux](posts/React/rn-redux.md)
   * [Redux-saga](posts/React/rn-redux-saga.md)
-* Vue
+* ##### Vue
+  
   * [Vue란](posts/Vue/0-why-vue.md)
   * [시작하기](posts/Vue/1-create-vue.md)
   * [Vue 라우터](posts/Vue/2-vue-router.md)
@@ -28,11 +37,13 @@
   * [event](posts/Vue/vue-event.md)
   * [lifecycle](posts/Vue/vue-lifecycle.md)
   * [Nuxt.js](posts/Vue/nuxt.md)
-* DB
+* ##### DB
+  
   * [CRUD](posts/DB/CRUD.md)
   * [MongoDB](posts/DB/MongoDB.md)
   * [NoSQL](posts/DB/NoSQL.md)
-* etc.
+* ##### etc.
+  
   * [디자인 패턴](posts/etc/mvc-mvp-mvvm.md)
   * [소프트웨어 아키텍쳐](posts/etc/software_architecture.md)
   * [깃플로우](posts/etc/git-flow.md)
