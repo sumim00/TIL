@@ -21,8 +21,9 @@
   * [sort() 함수](posts/JavaScript/js-sort.md)
 * ##### TypeScript
   
-  * [TypeScript란](posts/TypeScript/why_TypeScript.md)
+  * [TypeScript란](posts/TypeScript/01_why_TypeScript.md)
   * [타입 정의하기](posts/TypeScript/02_Default_types.md)
+  * [컴파일러 사용법 및 옵션](posts/TypeScript/03_Compiling.md)
 * ##### React
   
   * [Redux](posts/React/rn-redux.md)

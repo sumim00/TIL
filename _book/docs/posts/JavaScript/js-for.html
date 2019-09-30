@@ -1,0 +1,859 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>for문 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    
+    <link rel="prev" href="js-hoisting.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    CSS
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../css/css_naming.html">
+            
+                <a href="../css/css_naming.html">
+            
+                    
+                    CSS 방법론
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../css/css_animation.html">
+            
+                <a href="../css/css_animation.html">
+            
+                    
+                    animation, keyframe 속성
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../css/grid.html">
+            
+                <a href="../css/grid.html">
+            
+                    
+                    grid 속성
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../css/css_flex_vendor_prefix.html">
+            
+                <a href="../css/css_flex_vendor_prefix.html">
+            
+                    
+                    flex 속성 벤더 프리픽스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../css/css_sticky.html">
+            
+                <a href="../css/css_sticky.html">
+            
+                    
+                    sticky 속성
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" >
+            
+                <span>
+            
+                    
+                    JavaScript
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="js-regex.html">
+            
+                <a href="js-regex.html">
+            
+                    
+                    정규표현식 (RegExp)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="js-scope.html">
+            
+                <a href="js-scope.html">
+            
+                    
+                    Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="js-return.html">
+            
+                <a href="js-return.html">
+            
+                    
+                    return의 역할
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="js-web-component.html">
+            
+                <a href="js-web-component.html">
+            
+                    
+                    웹 컴포넌트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="js-hoisting.html">
+            
+                <a href="js-hoisting.html">
+            
+                    
+                    Hoisting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3.6" data-path="js-for.html">
+            
+                <a href="js-for.html">
+            
+                    
+                    for문
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" >
+            
+                <span>
+            
+                    
+                    TypeScript
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../TypeScript/why_TypeScript.html">
+            
+                <a href="../TypeScript/why_TypeScript.html">
+            
+                    
+                    TypeScript란
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" >
+            
+                <span>
+            
+                    
+                    React
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../React/rn-redux.html">
+            
+                <a href="../React/rn-redux.html">
+            
+                    
+                    Redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../React/rn-redux-saga.html">
+            
+                <a href="../React/rn-redux-saga.html">
+            
+                    
+                    Redux-saga
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" >
+            
+                <span>
+            
+                    
+                    Vue
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.6.1" data-path="../Vue/0-why-vue.html">
+            
+                <a href="../Vue/0-why-vue.html">
+            
+                    
+                    Vue란
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.2" data-path="../Vue/1-create-vue.html">
+            
+                <a href="../Vue/1-create-vue.html">
+            
+                    
+                    시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.3" data-path="../Vue/2-vue-router.html">
+            
+                <a href="../Vue/2-vue-router.html">
+            
+                    
+                    Vue 라우터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.4" data-path="../Vue/vue-component.html">
+            
+                <a href="../Vue/vue-component.html">
+            
+                    
+                    컴포넌트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.5" data-path="../Vue/vue-computed-method-watch.html">
+            
+                <a href="../Vue/vue-computed-method-watch.html">
+            
+                    
+                    computed,method,watch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.6" data-path="../Vue/vue-event.html">
+            
+                <a href="../Vue/vue-event.html">
+            
+                    
+                    event
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.7" data-path="../Vue/vue-lifecycle.html">
+            
+                <a href="../Vue/vue-lifecycle.html">
+            
+                    
+                    lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6.8" data-path="../Vue/nuxt.html">
+            
+                <a href="../Vue/nuxt.html">
+            
+                    
+                    Nuxt.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" >
+            
+                <span>
+            
+                    
+                    DB
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.7.1" data-path="../DB/CRUD.html">
+            
+                <a href="../DB/CRUD.html">
+            
+                    
+                    CRUD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.2" data-path="../DB/MongoDB.html">
+            
+                <a href="../DB/MongoDB.html">
+            
+                    
+                    MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7.3" data-path="../DB/NoSQL.html">
+            
+                <a href="../DB/NoSQL.html">
+            
+                    
+                    NoSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" >
+            
+                <span>
+            
+                    
+                    etc.
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="../etc/mvc-mvp-mvvm.html">
+            
+                <a href="../etc/mvc-mvp-mvvm.html">
+            
+                    
+                    디자인 패턴
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="../etc/software_architecture.html">
+            
+                <a href="../etc/software_architecture.html">
+            
+                    
+                    소프트웨어 아키텍쳐
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.3" data-path="../etc/git-flow.html">
+            
+                <a href="../etc/git-flow.html">
+            
+                    
+                    깃플로우
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="../etc/app_accessibility.html">
+            
+                <a href="../etc/app_accessibility.html">
+            
+                    
+                    모바일 애플리케이션 접근성 지침 2.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="../etc/storybook.html">
+            
+                <a href="../etc/storybook.html">
+            
+                    
+                    storybook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.6" data-path="../etc/sql_commands.html">
+            
+                <a href="../etc/sql_commands.html">
+            
+                    
+                    SQL 명령문
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >for문</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="javascript-foreach-forin-forof-&#xC815;&#xB9AC;">[JavaScript] forEach, for...in, for...of &#xC815;&#xB9AC;</h1>
+<h3 id="&#xD074;&#xB798;&#xC2DD;-for&#xBB38;">&#xD074;&#xB798;&#xC2DD; for&#xBB38;</h3>
+<p>&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8;&#xB97C; &#xC2DC;&#xC791;&#xD558;&#xBA74;&#xC11C; &#xCC98;&#xC74C; &#xC811;&#xD558;&#xB294; &#xBA54;&#xC11C;&#xB4DC; &#xC911; &#xD558;&#xB098;&#xAC00; <code>for&#xBB38;</code>&#xC774;&#xB2E4;. &#xD754;&#xD788; &#xC54C;&#xACE0; &#xC788;&#xB294; &#xD074;&#xB798;&#xC2DD;&#xD55C; &#xC0AC;&#xC6A9;&#xBC95;&#xC740; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC774; &#xBCC0;&#xC218;&#xB97C; &#xC120;&#xC5B8;&#xD558;&#xACE0;, &#xC870;&#xAC74;&#xC744; &#xC815;&#xD558;&#xACE0;, &#xC99D;&#xAC10;&#xC2DD;&#xC744; &#xC791;&#xC131;&#xD55C;&#xB2E4;. </p>
+<pre><code class="lang-js"><span class="hljs-keyword">let</span> foo = [<span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-string">&quot;b&quot;</span>, <span class="hljs-string">&quot;c&quot;</span>];
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i = <span class="hljs-number">0</span>; i &lt; foo.length; i++){
+    <span class="hljs-built_in">console</span>.log(foo[i]);
+}
+
+<span class="hljs-comment">// a, b, c</span>
+</code></pre>
+<p><br></p>
+<h3 id="foeach&#xBB38;">foEach&#xBB38;</h3>
+<p> <code>forEach</code>&#xBB38;&#xC740; &#xBC30;&#xC5F4;(Array)&#xC5D0;&#xC11C;&#xB9CC; &#xC0AC;&#xC6A9; &#xAC00;&#xB2A5;&#xD55C; &#xBA54;&#xC11C;&#xB4DC;&#xB85C;, &#xBC30;&#xC5F4;&#xC758; &#xAC01; &#xC694;&#xC18C;&#xB4E4;&#xC774; &#xBC18;&#xBCF5;&#xD574;&#xC11C; &#xC791;&#xC5C5;&#xC744; &#xC218;&#xD589;&#xD560; &#xC218; &#xC788;&#xB3C4;&#xB85D; &#xB3D5;&#xB294;&#xB2E4;. &#xB610;&#xD55C; <code>item</code>&#xC774;&#xB77C;&#xB294; &#xCF5C;&#xBC31;&#xD568;&#xC218;&#xAC00; &#xBC30;&#xC5F4; &#xB0B4;&#xC758; &#xAC01; &#xC694;&#xC18C;&#xB4E4;&#xC758; &#xAC12;&#xC744; &#xAC00;&#xB9AC;&#xD0A4;&#xACE0; &#xC788;&#xC74C;&#xC744; &#xC54C; &#xC218; &#xC788;&#xB2E4;.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> arr = [<span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-string">&quot;b&quot;</span>, <span class="hljs-string">&quot;c&quot;</span>];
+
+arr.forEach(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">i</span>)</span>{
+    <span class="hljs-built_in">console</span>.log(i);
+});
+
+<span class="hljs-comment">// a, b, c</span>
+</code></pre>
+<p><br></p>
+<h3 id="forin&#xBB38;">for...in&#xBB38;</h3>
+<p> <code>for...in</code> &#xBB38;&#xC740; &#xAC1D;&#xCCB4; &#xB0B4;&#xC758; &#xC18D;&#xC131;&#xB4E4;&#xC744; &#xBC18;&#xBCF5;&#xD558;&#xC5EC; &#xC791;&#xC5C5;&#xC744; &#xC218;&#xD589;&#xD560; &#xC218; &#xC788;&#xB2E4;. &#xAC1D;&#xCCB4; &#xB0B4; <code>key</code>&#xAC12;&#xC5D0; &#xC811;&#xADFC;&#xD560; &#xC218; &#xC788;&#xC9C0;&#xB9CC;, <code>value</code>&#xAC12;&#xC5D0; &#xC9C1;&#xC811;&#xC801;&#xC73C;&#xB85C; &#xC811;&#xADFC;&#xD558;&#xB294; &#xBC29;&#xBC95;&#xC740; &#xC81C;&#xACF5;&#xD558;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> obj = {
+    a: <span class="hljs-number">1</span>,
+    b: <span class="hljs-number">2</span>,
+    c: <span class="hljs-number">3</span>
+};
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i <span class="hljs-keyword">in</span> obj) {
+    <span class="hljs-built_in">console</span>.log(i + <span class="hljs-string">&apos;: &apos;</span> +obj[i]);
+};
+
+<span class="hljs-comment">// a: 1, b: 2, c: 3</span>
+</code></pre>
+<p><br></p>
+<h3 id="forof">for...of</h3>
+<p><code>for...of</code>&#xB294; ES6&#xC5D0;&#xC11C; &#xC0C8;&#xB85C;&#xC774; &#xCD94;&#xAC00;&#xB41C; &#xAD6C;&#xBB38;&#xC774;&#xB2E4;. iterator &#xC18D;&#xC131;&#xC774; &#xC788;&#xB294; &#xAC1D;&#xCCB4; (<code>Array</code>, <code>Map</code>, <code>Set</code>,<code>String</code>, <code>TypedArray</code>, <code>arguments &#xAC1D;&#xCCB4;</code> &#xB4F1;)&#xC758; &#xAC12;&#xC744; &#xBC18;&#xBCF5;&#xD558;&#xBA70;, <code>string</code> &#xACFC; &#xAC19;&#xC740; &#xC77C;&#xBC18; &#xBB38;&#xC7A5;&#xD615;&#xC5D0;&#xB3C4; loop&#xAC00; &#xAC00;&#xB2A5;&#xD558;&#xB2E4;.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> arr = [<span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-string">&quot;b&quot;</span>, <span class="hljs-string">&quot;c&quot;</span>];
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i <span class="hljs-keyword">of</span> arr) {
+    <span class="hljs-built_in">console</span>.log(i);
+};
+
+<span class="hljs-comment">// a, b, c</span>
+
+
+<span class="hljs-keyword">let</span> fruit = <span class="hljs-string">&apos;orange&apos;</span>;
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i <span class="hljs-keyword">of</span> fruit) {
+    <span class="hljs-built_in">console</span>.log(i);
+};
+
+<span class="hljs-comment">// o, r, a, n, g, e</span>
+</code></pre>
+<p><br></p>
+<h3 id="&#xADF8;&#xB798;&#xC11C;-&#xCC28;&#xC774;&#xC810;&#xC740;">&#xADF8;&#xB798;&#xC11C; &#xCC28;&#xC774;&#xC810;&#xC740;?</h3>
+<p>&#xAC00;&#xC7A5; &#xD070; &#xCC28;&#xC774;&#xC810;&#xC740; <code>for...in</code>&#xC740; <strong>&#xC5F4;&#xAC70; &#xAC00;&#xB2A5;&#xD55C;(enumerable) &#xC18D;&#xC131;&#xC774; true&#xB85C; &#xC124;&#xC815;&#xB41C; &#xAC1D;&#xCCB4;</strong>&#xB4E4;&#xB9CC; &#xC0AC;&#xC6A9; &#xAC00;&#xB2A5;&#xD558;&#xBA70;, <code>for...of</code>&#xB294; <strong>[Symbol.iterator] &#xC18D;&#xC131;&#xC774; &#xC788;&#xB294; &#xC694;&#xC18C;</strong>&#xC5D0; &#xB300;&#xD574; &#xBC18;&#xBCF5;&#xD55C;&#xB2E4;&#xB294; &#xC810;&#xC774;&#xB2E4;. &#xAC00;&#xB839; &#xC544;&#xAE4C; <code>for...in</code>&#xBB38;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xD55C; &#xAD6C;&#xBB38;&#xC744; <code>for...of</code>&#xC5D0;&#xC11C; &#xBE44;&#xC2B7;&#xD558;&#xAC8C; &#xC0AC;&#xC6A9;&#xD55C;&#xB2E4;&#xBA74; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xACB0;&#xACFC;&#xAC00; &#xB098;&#xC628;&#xB2E4;.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> foo = {
+    a: <span class="hljs-number">1</span>,
+    b: <span class="hljs-number">2</span>,
+    c: <span class="hljs-number">3</span>
+};
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i <span class="hljs-keyword">of</span> foo) {
+    <span class="hljs-built_in">console</span>.log(i);
+};
+
+<span class="hljs-comment">// Uncaught TypeError: foo is not iterable</span>
+</code></pre>
+<p>&#xC774;&#xB294; <code>foo</code> &#xAC1D;&#xCCB4;&#xAC00; iterable&#xC18D;&#xC131;&#xC774; &#xC5C6;&#xB294; &#xC624;&#xBE0C;&#xC81D;&#xD2B8; &#xD0C0;&#xC785;&#xC774;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xBC1C;&#xC0DD;&#xD55C; &#xC5D0;&#xB7EC;&#xC774;&#xB2E4;. &#xADF8;&#xB807;&#xB2E4;&#xBA74; &#xBC18;&#xB300;&#xB85C; <code>foo...of</code>&#xBB38;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xD55C; &#xAD6C;&#xBB38;&#xC744; <code>foo...in</code>&#xC5D0; &#xC801;&#xC6A9;&#xD55C;&#xB2E4;&#xBA74; &#xC5B4;&#xB5A4; &#xACB0;&#xACFC;&#xAC00; &#xB098;&#xC62C;&#xAE4C;.</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">let</span> arr = [<span class="hljs-string">&quot;a&quot;</span>, <span class="hljs-string">&quot;b&quot;</span>, <span class="hljs-string">&quot;c&quot;</span>];
+
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">let</span> i <span class="hljs-keyword">in</span> arr) {
+    <span class="hljs-built_in">console</span>.log(i);
+};
+
+<span class="hljs-comment">// 0, 1, 2</span>
+</code></pre>
+<p>&#xC544;&#xAE4C;&#xC640; &#xB2EC;&#xB9AC; &#xC5D0;&#xB7EC;&#xAC00; &#xC5C6;&#xAE34; &#xD558;&#xC9C0;&#xB9CC;, &#xBC30;&#xC5F4;&#xC758; value&#xAC00; &#xC544;&#xB2CC; index&#xAC12;&#xC744; &#xBCF4;&#xC5EC;&#xC900;&#xB2E4;. &#xB610;&#xD55C; for...in&#xC744; &#xC0AC;&#xC6A9;&#xD560; &#xB550; &#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xC8FC;&#xC758;&#xC810;&#xC774; &#xC788;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xAC00;&#xAE09;&#xC801; &#xBC30;&#xC5F4;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xAC83;&#xC740; &#xC9C0;&#xC591;&#xD558;&#xB294; &#xAC83;&#xC774; &#xC88B;&#xB2E4;.</p>
+<h5 id="forin-&#xC0AC;&#xC6A9;-&#xC2DC;-&#xC8FC;&#xC758;&#xC810;">for...in &#xC0AC;&#xC6A9; &#xC2DC; &#xC8FC;&#xC758;&#xC810;</h5>
+<ul>
+<li>&#xC21C;&#xC11C;&#xAC00; &#xBCF4;&#xC7A5;&#xB418;&#xC9C0; &#xC54A;&#xB294;&#xB2E4;. (&#xD504;&#xB85C;&#xD37C;&#xD2F0; &#xAC04;&#xC5D0;&#xB294; &#xC21C;&#xC11C;&#xB97C; &#xC758;&#xC2DD;&#xD558;&#xC9C0; &#xC54A;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xC21C;&#xC11C;&#xB97C; &#xC758;&#xC2DD;&#xD574;&#xC57C; &#xD558;&#xB294; &#xBC30;&#xC5F4;&#xC758; &#xACBD;&#xC6B0;&#xC5D0;&#xB294; for...in&#xBB38;&#xC744; &#xC0AC;&#xC6A9;&#xD558;&#xC9C0; &#xC54A;&#xB294; &#xAC83;&#xC774; &#xC88B;&#xB2E4;.)</li>
+<li>length &#xC0AC;&#xC6A9; &#xBD88;&#xAC00; (&#xC624;&#xBE0C;&#xC81D;&#xD2B8;&#xC758; &#xACBD;&#xC6B0; &#xBC30;&#xC5F4;&#xCC98;&#xB7FC; &#xAC1C;&#xC218;&#xB97C; &#xC140; &#xC218; &#xC5C6;&#xC73C;&#xBBC0;&#xB85C; for...in&#xBB38;&#xC5D0;&#xC11C; &#xC624;&#xBE0C;&#xC81D;&#xD2B8; &#xB0B4; &#xD0A4; &#xAC12;&#xC758; &#xAC1C;&#xC218; &#xB4F1;&#xC744; &#xD30C;&#xC545;&#xD560; &#xC218; &#xC5C6;&#xB2E4;.)</li>
+<li>value&#xAC12;&#xC740; string&#xC774;&#xB2E4;. (&#xC5F0;&#xC0B0;&#xC791;&#xC5C5;&#xC744; &#xD560; &#xC218; &#xC5C6;&#xB2E4;.)</li>
+</ul>
+<p><br></p>
+<h2 id="&#xACB0;&#xB860;">&#xACB0;&#xB860;</h2>
+<ol>
+<li>for&#xB97C; &#xC774;&#xC6A9;&#xD55C; &#xBC18;&#xBCF5;&#xBB38;&#xC5D0;&#xB294; &#xD074;&#xB798;&#xC2DD;&#xD55C; for&#xBB38;, forEach, for...in, for...of &#xB4F1;&#xC774; &#xC788;&#xB2E4;.</li>
+<li>for...in&#xC740; &#xC624;&#xBE0C;&#xC81D;&#xD2B8;&#xC5D0;&#xC11C;, for...of&#xB294; &#xBC30;&#xC5F4;&#xC5D0;&#xC11C; &#xC0AC;&#xC6A9;&#xD558;&#xB294; &#xAC83;&#xC774; &#xC88B;&#xB2E4;.</li>
+</ol>
+<p><br></p>
+<h2 id="reference">Reference</h2>
+<p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/for...of" target="_blank">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Statements/for...of</a></p>
+<p><a href="https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach" target="_blank">https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach</a></p>
+<p><a href="https://alligator.io/js/for-of-for-in-loops/" target="_blank">https://alligator.io/js/for-of-for-in-loops/</a></p>
+<p><a href="https://jsdev.kr/t/for-in-vs-for-of/2938" target="_blank">https://jsdev.kr/t/for-in-vs-for-of/2938</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="js-hoisting.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page: Hoisting">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"for문","level":"1.3.6","depth":2,"next":{"title":"TypeScript","level":"1.4","depth":1,"ref":"","articles":[{"title":"TypeScript란","level":"1.4.1","depth":2,"path":"TypeScript/why_TypeScript.md","ref":"TypeScript/why_TypeScript.md","articles":[]}]},"previous":{"title":"Hoisting","level":"1.3.5","depth":2,"path":"JavaScript/js-hoisting.md","ref":"JavaScript/js-hoisting.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"JavaScript/js-for.md","mtime":"2019-05-23T14:17:02.851Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-12T06:52:09.333Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
