@@ -1,4 +1,4 @@
-## CSS 논리적 속성 (CSS Logical Properties)
+# [CSS] 논리적 속성 (CSS Logical Properties)
 
 ### 왜 논리적 속성이 중요할까
 

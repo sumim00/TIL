@@ -1,4 +1,4 @@
-## [Vue.js] 2. Router 설치 및 디렉토리 톺아보기
+# [Vue.js] 2. Router 설치 및 디렉토리 톺아보기
 
 ### CDN
 

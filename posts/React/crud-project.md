@@ -1,4 +1,4 @@
-# React.js로 CRUD기능을 가진 노트 SPA 만들기
+# [React] React로 CRUD기능을 가진 노트 SPA 만들기
 
 > [React CURD Example](https://appdividend.com/2018/11/11/react-crud-example-mern-stack-tutorial/) 의 글을 일부 번역/응용하였으며 본고에서 생략되거나 짚고 넘어가지 않은 부분은 원문에서 확인하실 수 있습니다. 
 >

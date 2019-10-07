@@ -1,4 +1,4 @@
-## Git Flow
+# [etc] Git Flow
 
 #### Git Flow란?
 

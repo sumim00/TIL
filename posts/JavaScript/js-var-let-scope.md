@@ -1,4 +1,4 @@
-## var VS let, const
+# [JavaScript] var VS let, const
 
 #### var
 

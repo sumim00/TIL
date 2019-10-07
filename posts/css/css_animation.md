@@ -1,4 +1,4 @@
-## CSS animation, keyframe 속성
+# [CSS] animation, keyframe 속성
 
 애니메이션 속성은 CSS3 속성 중 하나이며, 원하는 시간에 원하는 CSS스타일을 정의하는 기능을 갖고 있다. 사용 방법은 @keyframe으로 고유한 애니메이션을 생성하고 animation 속성을 이용해 원하는 태그에 해당 애니메이션을 적용한다.
 

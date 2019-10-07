@@ -1,4 +1,4 @@
-## split(), splice(), slice() 정리
+# [JavaScript] split(), splice(), slice() 정리
 
 공통점 : JavaScript Array에서 문자열을 분할하는 메서드
 

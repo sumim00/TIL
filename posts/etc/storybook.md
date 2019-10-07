@@ -1,4 +1,4 @@
-# Storybook
+# [etc] Storybook
 
 [Storybook](<https://storybook.js.org/>)은 개발자가 독립적인 컴포넌트를 만들 수 있도록 지원하는 UI 개발 환경이다. 
 

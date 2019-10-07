@@ -1,4 +1,4 @@
-# TypeScript
+# [TypeScript] 0.시작하기
 
 #### 공식 문서
 

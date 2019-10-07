@@ -1,4 +1,4 @@
-## [Vue.js] Vue.js 시작하기
+# [Vue.js] Vue.js 시작하기
 
 > Vue.js 정의부터, 배워야 하는 이유까지.
 

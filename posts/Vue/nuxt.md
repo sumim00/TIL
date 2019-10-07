@@ -1,4 +1,4 @@
-# Nuxt.js
+# [Vue.js] Nuxt.js
 
 ### [Nuxt.js](<https://ko.nuxtjs.org/>)란?
 

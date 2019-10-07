@@ -1,4 +1,4 @@
-## 04 인터페이스
+# [TypeScript] 04.인터페이스
 
 #### 인터페이스란?
 
@@ -65,6 +65,18 @@ class Todo implements ITodo {
 const todo = new Todo(1, 'Typescript', false);
 
 console.log(todo);
+```
+
+
+
+#### interface optional
+
+```typescript
+interface Todo {
+    id: number;
+    content?: string; // content의 타입 정의를 강제하지 않는다.
+    completed: boolean;
+}
 ```
 
 

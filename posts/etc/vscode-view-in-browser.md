@@ -1,4 +1,4 @@
-## vscode에서 html 파일 크롬 브라우저로 확인하기	
+# [etc] vscode에서 html 파일 크롬 브라우저로 확인하기	
 
 1. `ctrl` + `shift` + `p` (혹은 `F1`) 을 눌러 커맨드 창을 켠다. 
 2. `Tasks: Configure Task` 를 클릭하고 `task.json` 파일 만들기로 넘어간다. 

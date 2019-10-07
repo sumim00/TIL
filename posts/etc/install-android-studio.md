@@ -1,4 +1,4 @@
-## Android Studio 설치하기(windows)	
+# [etc] Android Studio 설치하기(windows)	
 
 ### JDK 설치
 

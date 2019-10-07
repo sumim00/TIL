@@ -1,4 +1,4 @@
-## Math 객체에서 자주 사용하는 메소드
+# [JavaScript] Math 객체에서 자주 사용하는 메소드
 
 ##### Math.random();
 

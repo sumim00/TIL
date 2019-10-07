@@ -1,4 +1,4 @@
-# axios
+# [JavaScript] axios
 
 [axios](<https://www.npmjs.com/package/axios>) 는 Promise 기반 HTTP  클라이언트 라이브러리이다. 
 

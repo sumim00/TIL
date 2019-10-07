@@ -1,4 +1,4 @@
-## JavaScript 모바일 OS 체크하기
+# [JavaScript] 모바일 OS 체크하기
 
 
 

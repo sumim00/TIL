@@ -1,4 +1,4 @@
-## JavaScript return 기능 정리
+# [JavaScript] return 기능 정리
 
 ### return의 역할
 

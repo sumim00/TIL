@@ -1,4 +1,4 @@
-## RN 스크롤,리스트 관련 컴포넌트 3가지
+# [React Native] RN 스크롤,리스트 관련 컴포넌트 3가지
 
 ### ScrollView
 

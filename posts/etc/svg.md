@@ -1,4 +1,4 @@
-# SVG
+# [etc] SVG
 
 SVG란 확장 가능한 벡터 그래픽(Scalable Vector Graphics)의 약어로, 그래픽을 마크업하기 위한 W3C XML의 특수언어이다.
 

@@ -1,4 +1,4 @@
-## GitBook
+# [etc] GitBook
 
 [GitBook](<https://www.gitbook.com/>)은 API와 같이 공유가 필요한 자료들을 쉽게 문서화할 수 있도록 돕는 최신 문서 플랫폼이다. 
 

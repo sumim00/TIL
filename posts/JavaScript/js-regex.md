@@ -1,4 +1,4 @@
-# 정규표현식 (RegExp)
+# [JavaScript] 정규표현식 (RegExp)
 
 
 ## 선언 방법
