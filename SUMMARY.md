@@ -54,6 +54,11 @@
   * [MongoDB](posts/DB/MongoDB.md)
   * [NoSQL](posts/DB/NoSQL.md)
 
+## Algorithm
+
+  * [Recursion](posts/Algorithm/Recursion.md)
+  * [Sort](posts/Algorithm/Sort.md)
+
 ## etc.
 
   * [디자인 패턴](posts/etc/mvc-mvp-mvvm.md)
