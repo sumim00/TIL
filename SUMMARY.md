@@ -56,8 +56,8 @@
 
 ## Algorithm
 
-  * [Recursion](posts/Algorithm/Recursion.md)
-  * [Sort](posts/Algorithm/Sort.md)
+  * [재귀](posts/Algorithm/Recursion.md)
+  * [정렬](posts/Algorithm/Sort.md)
 
 ## etc.
 
