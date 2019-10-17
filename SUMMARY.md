@@ -58,6 +58,7 @@
 
   * [재귀](posts/Algorithm/Recursion.md)
   * [정렬](posts/Algorithm/Sort.md)
+  * [이진검색트리](posts/Algorithm/BST.md)
 
 ## etc.
 
