@@ -10,6 +10,7 @@
   * [flex 속성 벤더 프리픽스](posts/css/css_flex_vendor_prefix.md)
   * [sticky 속성](posts/css/css_sticky.md)
   * [논리적 속성](posts/css/css_logical_properties.md)
+  * [스타일 상속과 우선 순위](posts/css/css_cascading.md)
 
 ## JavaScript
 
@@ -21,6 +22,7 @@
   * [Math 객체에서 자주 사용하는 메소드](posts/JavaScript/js-Math.md)
   * [split(), splice(), slice() 정리](posts/JavaScript/js-slice.md)
   * [sort() 함수](posts/JavaScript/js-sort.md)
+  * [var, let, const](posts/JavaScript/js-var-let-scope.md)
 
 ## TypeScript
 
@@ -59,6 +61,7 @@
   * [재귀](posts/Algorithm/Recursion.md)
   * [정렬](posts/Algorithm/Sort.md)
   * [이진검색트리](posts/Algorithm/BST.md)
+  * [해시](posts/Algorithm/Hash.md)
 
 ## etc.
 
@@ -71,4 +74,5 @@
   * [gitbook](posts/etc/GitBook.md)
   * [svg](posts/etc/svg.md)
   * [웹 컴포넌트](posts/etc/web-component.md)
+  * [이미지 스프라이트](posts/etc/image-sprite.md)
 
