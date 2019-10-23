@@ -23,6 +23,7 @@
   * [split(), splice(), slice() 정리](posts/JavaScript/js-slice.md)
   * [sort() 함수](posts/JavaScript/js-sort.md)
   * [var, let, const](posts/JavaScript/js-var-let-scope.md)
+  * [크로스 도메인 이슈와 CORS](posts/JavaScript/js-CORS.md)
 
 ## TypeScript
 
