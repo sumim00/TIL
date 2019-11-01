@@ -12,6 +12,8 @@
   * [논리적 속성](posts/css/css_logical_properties.md)
   * [스타일 상속과 우선 순위](posts/css/css_cascading.md)
 
+
+
 ## JavaScript
 
   * [정규표현식 (RegExp)](posts/JavaScript/js-regex.md)
@@ -25,6 +27,8 @@
   * [var, let, const](posts/JavaScript/js-var-let-scope.md)
   * [크로스 도메인 이슈와 CORS](posts/JavaScript/js-CORS.md)
 
+
+
 ## TypeScript
 
   * [TypeScript란](posts/TypeScript/01_why_TypeScript.md)
@@ -33,12 +37,16 @@
   * [Interface](posts/TypeScript/04_Interface.md)
   * [class](posts/TypeScript/05_class.md)
 
+
+
 ## React
 
   * [Redux](posts/React/rn-redux.md)
   * [Redux-saga](posts/React/rn-redux-saga.md)
   * [React Native 시작하기](posts/React/rn-start.md)
   * [React Native 컴포넌트](posts/React/rn-components.md)
+
+
 
 ## Vue
 
@@ -51,11 +59,15 @@
   * [lifecycle](posts/Vue/vue-lifecycle.md)
   * [Nuxt.js](posts/Vue/nuxt.md)
 
+
+
 ## DB
 
   * [CRUD](posts/DB/CRUD.md)
   * [MongoDB](posts/DB/MongoDB.md)
   * [NoSQL](posts/DB/NoSQL.md)
+
+
 
 ## Algorithm
 
@@ -64,17 +76,26 @@
   * [이진검색트리](posts/Algorithm/BST.md)
   * [해시](posts/Algorithm/Hash.md)
 
-## etc.
 
+
+## Web
+
+  * [웹 동작방식](posts/etc/web-works.md)
+  * [웹 컴포넌트](posts/etc/web-component.md)
   * [디자인 패턴](posts/etc/mvc-mvp-mvvm.md)
   * [소프트웨어 아키텍쳐](posts/etc/software_architecture.md)
+
+
+
+## etc.
+
   * [깃플로우](posts/etc/git-flow.md)
   * [모바일 애플리케이션 접근성 지침 2.0](posts/etc/app_accessibility.md)
   * [storybook](posts/etc/storybook.md)
   * [SQL 명령문](posts/etc/sql_commands.md)
   * [gitbook](posts/etc/GitBook.md)
   * [svg](posts/etc/svg.md)
-  * [웹 컴포넌트](posts/etc/web-component.md)
   * [이미지 스프라이트](posts/etc/image-sprite.md)
   * [FOUC](posts/etc/FOUC.md)
+
 
