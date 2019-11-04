@@ -1,4 +1,4 @@
-# [etc] 디자인 패턴 톺아보기 - MVC, MVP, MVVM
+# [Web] 디자인 패턴 톺아보기 - MVC, MVP, MVVM
 
 ## 디자인 패턴?
 

@@ -80,10 +80,11 @@
 
 ## Web
 
-  * [웹 동작방식](posts/etc/web-works.md)
-  * [웹 컴포넌트](posts/etc/web-component.md)
-  * [디자인 패턴](posts/etc/mvc-mvp-mvvm.md)
-  * [소프트웨어 아키텍쳐](posts/etc/software_architecture.md)
+  * [웹 동작방식](posts/Web/web-works.md)
+  * [HTTP](posts/Web/web-http.md)
+  * [웹 컴포넌트](posts/Web/web-component.md)
+  * [디자인 패턴](posts/Web/mvc-mvp-mvvm.md)
+  * [소프트웨어 아키텍쳐](posts/Web/software_architecture.md)
 
 
 

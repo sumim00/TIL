@@ -1,4 +1,4 @@
-## [etc] 웹 동작방식
+# [Web] 웹 동작방식
 
 ![](https://sumim00.github.io/img/in-post/2019/1103_img01.png)
 
