@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Vue란 · GitBook</title>
+        <title>이진검색트리 · GitBook</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -57,10 +57,10 @@
     <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="1-create-vue.html" />
+    <link rel="next" href="Hash.html" />
     
     
-    <link rel="prev" href="../React/rn-components.html" />
+    <link rel="prev" href="Sort.html" />
     
 
     </head>
@@ -475,9 +475,9 @@
         
         
     
-        <li class="chapter active" data-level="6.1" data-path="0-why-vue.html">
+        <li class="chapter " data-level="6.1" data-path="../Vue/0-why-vue.html">
             
-                <a href="0-why-vue.html">
+                <a href="../Vue/0-why-vue.html">
             
                     
                     Vue란
@@ -488,9 +488,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.2" data-path="1-create-vue.html">
+        <li class="chapter " data-level="6.2" data-path="../Vue/1-create-vue.html">
             
-                <a href="1-create-vue.html">
+                <a href="../Vue/1-create-vue.html">
             
                     
                     시작하기
@@ -501,9 +501,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.3" data-path="2-vue-router.html">
+        <li class="chapter " data-level="6.3" data-path="../Vue/2-vue-router.html">
             
-                <a href="2-vue-router.html">
+                <a href="../Vue/2-vue-router.html">
             
                     
                     Vue 라우터
@@ -514,9 +514,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.4" data-path="vue-component.html">
+        <li class="chapter " data-level="6.4" data-path="../Vue/vue-component.html">
             
-                <a href="vue-component.html">
+                <a href="../Vue/vue-component.html">
             
                     
                     컴포넌트
@@ -527,9 +527,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.5" data-path="vue-computed-method-watch.html">
+        <li class="chapter " data-level="6.5" data-path="../Vue/vue-computed-method-watch.html">
             
-                <a href="vue-computed-method-watch.html">
+                <a href="../Vue/vue-computed-method-watch.html">
             
                     
                     computed,method,watch
@@ -540,9 +540,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.6" data-path="vue-event.html">
+        <li class="chapter " data-level="6.6" data-path="../Vue/vue-event.html">
             
-                <a href="vue-event.html">
+                <a href="../Vue/vue-event.html">
             
                     
                     event
@@ -553,9 +553,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.7" data-path="vue-lifecycle.html">
+        <li class="chapter " data-level="6.7" data-path="../Vue/vue-lifecycle.html">
             
-                <a href="vue-lifecycle.html">
+                <a href="../Vue/vue-lifecycle.html">
             
                     
                     lifecycle
@@ -566,9 +566,9 @@
             
         </li>
     
-        <li class="chapter " data-level="6.8" data-path="nuxt.html">
+        <li class="chapter " data-level="6.8" data-path="../Vue/nuxt.html">
             
-                <a href="nuxt.html">
+                <a href="../Vue/nuxt.html">
             
                     
                     Nuxt.js
@@ -632,9 +632,9 @@
         
         
     
-        <li class="chapter " data-level="8.1" data-path="../Algorithm/Recursion.html">
+        <li class="chapter " data-level="8.1" data-path="Recursion.html">
             
-                <a href="../Algorithm/Recursion.html">
+                <a href="Recursion.html">
             
                     
                     재귀
@@ -645,9 +645,9 @@
             
         </li>
     
-        <li class="chapter " data-level="8.2" data-path="../Algorithm/Sort.html">
+        <li class="chapter " data-level="8.2" data-path="Sort.html">
             
-                <a href="../Algorithm/Sort.html">
+                <a href="Sort.html">
             
                     
                     정렬
@@ -658,9 +658,9 @@
             
         </li>
     
-        <li class="chapter " data-level="8.3" data-path="../Algorithm/BST.html">
+        <li class="chapter active" data-level="8.3" data-path="BST.html">
             
-                <a href="../Algorithm/BST.html">
+                <a href="BST.html">
             
                     
                     이진검색트리
@@ -671,9 +671,9 @@
             
         </li>
     
-        <li class="chapter " data-level="8.4" data-path="../Algorithm/Hash.html">
+        <li class="chapter " data-level="8.4" data-path="Hash.html">
             
-                <a href="../Algorithm/Hash.html">
+                <a href="Hash.html">
             
                     
                     해시
@@ -897,7 +897,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="../.." >Vue란</a>
+        <a href="../.." >이진검색트리</a>
     </h1>
 </div>
 
@@ -912,32 +912,171 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="vuejs-vuejs-&#xC2DC;&#xC791;&#xD558;&#xAE30;">[Vue.js] Vue.js &#xC2DC;&#xC791;&#xD558;&#xAE30;</h1>
+                                <h2 id="dynamic-set">Dynamic Set</h2>
+<ul>
+<li><p>&#xC5EC;&#xB7EC; &#xAC1C;&#xC758; &#xD0A4;(key)&#xB97C; &#xC800;&#xC7A5;</p>
+</li>
+<li><p>&#xB2E4;&#xC74C;&#xACFC; &#xAC19;&#xC740; &#xC5F0;&#xC0B0;&#xB4E4;&#xC744; &#xC9C0;&#xC6D0;&#xD558;&#xB294; &#xC790;&#xB8CC;&#xAD6C;&#xC870;</p>
+<ul>
+<li>INSERT - &#xC0C8;&#xB85C;&#xC6B4; &#xD0A4;&#xC758; &#xC0BD;&#xC785;</li>
+<li>SEARCH - &#xD0A4; &#xD0D0;&#xC0C9;</li>
+<li>DELETE - &#xD0A4;&#xC758; &#xC0AD;&#xC81C;</li>
+</ul>
+</li>
+<li><p>&#xC608;: &#xC2EC;&#xBCFC; &#xD14C;&#xC774;&#xBE14;</p>
+</li>
+<li><p>&#xC815;&#xB82C;&#xB41C; &#xD639;&#xC740; &#xC815;&#xB82C;&#xB418;&#xC9C0; &#xC54A;&#xB294; &#xBC30;&#xC5F4; &#xD639;&#xC740; &#xC5F0;&#xACB0; &#xB9AC;&#xC2A4;&#xD2B8;&#xB97C; &#xC0AC;&#xC6A9;&#xD560; &#xACBD;&#xC6B0;,</p>
+<p>INSERT, SEARCH, DELETE &#xC911; &#xC801;&#xC5B4;&#xB3C4; &#xD558;&#xB098;&#xB294; O(n)</p>
+</li>
+<li><p>&#xBC29;&#xBC95; : &#xC774;&#xC9C4;&#xD0D0;&#xC0C9;&#xD2B8;&#xB9AC;, &#xB808;&#xB4DC;-&#xBE14;&#xB799; &#xD2B8;&#xB9AC;, AVL-&#xD2B8;&#xB9AC; &#xB4F1;</p>
+</li>
+</ul>
+<h2 id="&#xAC80;&#xC0C9;&#xD2B8;&#xB9AC;-search-tree">&#xAC80;&#xC0C9;&#xD2B8;&#xB9AC; (Search Tree)</h2>
+<ul>
+<li>Dynamic set&#xC744; &#xD2B8;&#xB9AC;&#xC758; &#xD615;&#xD0DC;&#xB85C; &#xAD6C;&#xD604; (&#xC6D0;&#xB798;&#xBD80;&#xD130; &#xD2B8;&#xB9AC;&#xC758; &#xAD6C;&#xC870;&#xB97C; &#xAC00;&#xC9C0;&#xC9C0;X)</li>
+<li>&#xC77C;&#xBC18;&#xC801;&#xC73C;&#xB85C; INSERT, SEARCH, DELETE &#xC5F0;&#xC0B0;&#xC774; &#xD2B8;&#xB9AC;&#xC758; &#xB192;&#xC774;(height)&#xC5D0; &#xBE44;&#xB840;&#xD558;&#xB294; &#xC2DC;&#xAC04;&#xBCF5;&#xC7A1;&#xB3C4;&#xB97C; &#xAC00;&#xC9D0;</li>
+<li>&#xC774;&#xC9C4;&#xAC80;&#xC0C9;&#xD2B8;&#xB9AC;, &#xB808;&#xB4DC;-&#xBE14;&#xB799; &#xD2B8;&#xB9AC;, B-&#xD2B8;&#xB9AC; &#xB4F1;</li>
+</ul>
+<h2 id="&#xC774;&#xC9C4;&#xAC80;&#xC0C9;&#xD2B8;&#xB9AC;-bst">&#xC774;&#xC9C4;&#xAC80;&#xC0C9;&#xD2B8;&#xB9AC; (BST)</h2>
+<ul>
+<li><p>&#xC774;&#xC9C4; &#xD2B8;&#xB9AC;&#xC774;&#xBA74;&#xC11C;</p>
+</li>
+<li><p>&#xAC01; &#xB178;&#xB4DC;&#xC5D0; &#xD558;&#xB098;&#xC758; &#xD0A4;&#xB97C; &#xC800;&#xC7A5;</p>
+</li>
+<li><p>&#xAC01; &#xB178;&#xB4DC; v&#xC5D0; &#xB300;&#xD574;&#xC11C; &#xADF8; &#xB178;&#xB4DC;&#xC758; &#xC67C;&#xCABD; &#xBD80;&#xD2B8;&#xB9AC;&#xC5D0; &#xC788;&#xB294; &#xD0A4;&#xB4E4;&#xC740; key[v]&#xBCF4;&#xB2E4; &#xC791;&#xAC70;&#xB098; &#xAC19;&#xACE0;,</p>
+<p>&#xC624;&#xB978;&#xCABD; &#xBD80;&#xD2B8;&#xB9AC;&#xC5D0; &#xC788;&#xB294; &#xAC12;&#xC740; &#xD06C;&#xAC70;&#xB098; &#xAC19;&#xB2E4;.</p>
+</li>
+</ul>
 <blockquote>
-<p>Vue.js &#xC815;&#xC758;&#xBD80;&#xD130;, &#xBC30;&#xC6CC;&#xC57C; &#xD558;&#xB294; &#xC774;&#xC720;&#xAE4C;&#xC9C0;.</p>
+<p>heep&#xACFC; &#xC720;&#xC0AC;&#xD558;&#xC9C0;&#xB9CC; heep&#xC740; complete binary tree&#xB9CC; &#xAC00;&#xB2A5;&#xD558;&#xACE0; BST&#xB294; &#xD2B8;&#xB9AC;&#xC758; &#xBAA8;&#xC591;&#xC5D0; &#xB300;&#xD574;&#xC11C;&#xB294; &#xC81C;&#xC57D;&#xC774; &#xC5C6;&#xB2E4;. </p>
+<p>&#xB610;&#xD55C; heep&#xC740; &#xBD80;&#xBAA8; &#xB178;&#xB4DC;&#xAC00; &#xC790;&#xC2DD; &#xB178;&#xB4DC;&#xBCF4;&#xB2E4; &#xCEE4;&#xC57C; &#xD55C;&#xB2E4;&#xB294; Max Heap Property&#xC774; &#xC870;&#xAC74;&#xC774;&#xC9C0;&#xB9CC;, BST&#xB294; &#xBD80;&#xBAA8; &#xB178;&#xB4DC;&#xB294; &#xC67C;&#xCABD; &#xBD80;&#xD2B8;&#xB9AC;&#xBCF4;&#xB2E4; &#xC791;&#xAC70;&#xB098; &#xAC19;&#xACE0; &#xC624;&#xB978;&#xCABD; &#xBD80;&#xD2B8;&#xB9AC;&#xBCF4;&#xB2E4; &#xD06C;&#xAC70;&#xB098; &#xAC19;&#xC544;&#xC57C; &#xD55C;&#xB2E4;.</p>
 </blockquote>
-<h3 id="vuejs">Vue.js</h3>
+<h3 id="search">SEARCH</h3>
+<blockquote>
+<p>&#xB8E8;&#xD2B8; &#xB178;&#xB4DC;&#xB85C; &#xC811;&#xADFC; -&gt; &#xB178;&#xB4DC;&#xC640; &#xD544;&#xC694;&#xD55C; &#xAC12;&#xC744; &#xB300;&#xC870;&#xD558;&#xC5EC; &#xC624;&#xB978;&#xCABD; &#xD639;&#xC740; &#xC678;&#xCABD;&#xC73C;&#xB85C; &#xC774;&#xB3D9;</p>
+</blockquote>
+<p>&#xC2DC;&#xAC04;&#xBCF5;&#xC7A1;&#xB3C4; : O(h), &#xC5EC;&#xAE30;&#xC11C; h&#xB294; &#xD2B8;&#xB9AC;&#xC758; &#xB192;&#xC774;. &#xD2B8;&#xB9AC;&#xC758; &#xB192;&#xC774; h&#xC5D0; &#xBE44;&#xB840;&#xD55C;&#xB2E4;.</p>
+<pre><code class="lang-bash">// recursion
+TREE-SEARCH(x, k)
+    <span class="hljs-keyword">if</span> x = NIL or k = key[x]
+        <span class="hljs-keyword">then</span> <span class="hljs-built_in">return</span> x
+    <span class="hljs-keyword">if</span> k &lt; key[x]
+        <span class="hljs-keyword">then</span> <span class="hljs-built_in">return</span> TREE-SEARCH(left[x], k)
+        <span class="hljs-keyword">else</span> <span class="hljs-built_in">return</span> TREE-SEARCH(right[x], k)
+
+// interative
+INTERATIVE-TREE-SEARCH(x, k)
+    <span class="hljs-keyword">while</span> x &#x2260; NIL and k &#x2260; key[x]
+        <span class="hljs-keyword">do</span> <span class="hljs-keyword">if</span> k &lt; key[x]
+            <span class="hljs-keyword">then</span> x &lt;- left[x]
+            <span class="hljs-keyword">else</span> x &lt;- right[x]
+    <span class="hljs-built_in">return</span> x
+</code></pre>
+<h4 id="&#xCD5C;&#xC18C;&#xAC12;-&#xCD5C;&#xB300;&#xAC12;">&#xCD5C;&#xC18C;&#xAC12;, &#xCD5C;&#xB300;&#xAC12;</h4>
 <ul>
-<li><p>&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C; &#xC911; &#xD558;&#xB098;</p>
+<li>&#xCD5C;&#xC18C;&#xAC12;&#xC740; &#xD56D;&#xC0C1; &#xAC00;&#xC7A5; &#xC67C;&#xCABD; &#xB178;&#xB4DC;&#xC5D0; &#xC874;&#xC7AC;</li>
+<li>&#xCD5C;&#xB300;&#xAC12;&#xC740; &#xD56D;&#xC0C1; &#xAC00;&#xC7A5; &#xC624;&#xB978;&#xCABD; &#xB178;&#xB4DC;&#xC5D0; &#xC874;&#xC7AC;</li>
+<li>&#xC2DC;&#xAC04;&#xBCF5;&#xC7A1;&#xB3C4;: O(h)</li>
+</ul>
+<pre><code class="lang-bash">TREE-MINIMUM(x)
+    <span class="hljs-keyword">while</span> left[x] &#x2260; NIL
+        <span class="hljs-keyword">do</span> x &lt;- left[x]
+    <span class="hljs-built_in">return</span> x
+
+TREE-MAXIMUM(x)
+    <span class="hljs-keyword">while</span> right[x] &#x2260; NIL
+        <span class="hljs-keyword">do</span> x &lt;- right[x]
+    <span class="hljs-built_in">return</span> x
+</code></pre>
+<h4 id="successor">Successor</h4>
+<ul>
+<li>&#xB178;&#xB4DC; x&#xC758; successor&#xB780; key[x]&#xBCF4;&#xB2E4; &#xD06C;&#xBA74;&#xC11C; &#xAC00;&#xC7A5; &#xC791;&#xC740; &#xD0A4;&#xB97C; &#xAC00;&#xC9C4; &#xB178;&#xB4DC;</li>
+<li>&#xBAA8;&#xB4E0; &#xD0A4;&#xB4E4;&#xC774; &#xC11C;&#xB85C; &#xB2E4;&#xB974;&#xB2E4;&#xACE0; &#xAC00;&#xC815; </li>
+<li>3&#xAC00;&#xC9C0; &#xACBD;&#xC6B0;<ul>
+<li>&#xB178;&#xB4DC; x&#xC758; &#xC624;&#xB978;&#xCABD; &#xBD80;&#xD2B8;&#xB9AC;&#xAC00; &#xC874;&#xC7AC;&#xD560; &#xACBD;&#xC6B0;, &#xC624;&#xB978;&#xCABD; &#xBD80;&#xD2B8;&#xB9AC;&#xC758; &#xCD5C;&#xC18C;&#xAC12;.</li>
+<li>&#xC624;&#xB978;&#xCABD; &#xBD80;&#xD2B8;&#xB9AC;&#xAC00; &#xC5C6;&#xB294; &#xACBD;&#xC6B0;, &#xBD80;&#xBAA8;&#xB97C; &#xB530;&#xB77C; &#xB8E8;&#xD2B8;&#xAE4C;&#xC9C0; &#xC62C;&#xB77C;&#xAC00;&#xBA74;&#xC11C; &#xCC98;&#xC74C;&#xC73C;&#xB85C; &#xB204;&#xAD70;&#xAC00;&#xC758; &#xC67C;&#xCABD; &#xC790;&#xC2DD;&#xC774; &#xB418;&#xB294; &#xB178;&#xB4DC;</li>
+<li>&#xADF8;&#xB7F0; &#xB178;&#xB4DC;&#xAC00; &#xC874;&#xC7AC;&#xD558;&#xC9C0; &#xC54A;&#xC744; &#xACBD;&#xC6B0; successor&#xAC00; &#xC874;&#xC7AC;&#xD558;&#xC9C0; &#xC54A;&#xC74C;. (&#xC989;, x&#xAC00; &#xCD5C;&#xB300;&#xAC12;)</li>
+</ul>
 </li>
-<li><p>AngularJS &#xAC1C;&#xBC1C;&#xC790;&#xC600;&#xB358; Evan You&#xC5D0; &#xC758;&#xD574; &#xD0C4;&#xC0DD;&#xD588;&#xB2E4;.</p>
+<li>&#xC2DC;&#xAC04;&#xBCF5;&#xC7A1;&#xB3C4;: O(h)</li>
+</ul>
+<pre><code class="lang-bash">TREE-SUCCESSOR(x)
+    <span class="hljs-keyword">if</span> right[x] &#x2260; NIL
+        <span class="hljs-keyword">then</span> <span class="hljs-built_in">return</span> TREE-MINIMUM(right[x])
+    y &lt;- [x]
+    <span class="hljs-keyword">while</span> y &#x2260; NIL and x = right[y]
+        <span class="hljs-keyword">do</span> x &lt;- y
+            y &lt;- p[y]
+    <span class="hljs-built_in">return</span> y
+</code></pre>
+<h4 id="predecessor">Predecessor</h4>
+<ul>
+<li>&#xB178;&#xB4DC; x&#xC758; predecessor&#xB780; key[x]&#xBCF4;&#xB2E4; &#xC791;&#xC73C;&#xBA74;&#xC11C; &#xAC00;&#xC7A5; &#xD070; &#xD0A4;&#xB97C; &#xAC00;&#xC9C4; &#xB178;&#xB4DC;</li>
+<li>Successor&#xC640; &#xBC18;&#xB300;</li>
+</ul>
+<h3 id="insert">INSERT</h3>
+<ul>
+<li>&#xAE30;&#xC874;&#xC758; &#xB178;&#xB4DC;&#xB97C; &#xBCC0;&#xD658;&#xD558;&#xC9C0; &#xC54A;&#xACE0; &#xCD94;&#xAC00;</li>
+<li>x, y 2&#xAC1C;&#xC758; &#xD2B8;&#xB9AC;&#xB97C; &#xC0AC;&#xC6A9;</li>
+<li>&#xC2DC;&#xAC04;&#xBCF5;&#xC7A1;&#xB3C4;: O(h)</li>
+</ul>
+<pre><code class="lang-bash">TREE-INSERT(T,z)
+    y &lt;- NIL
+    x &lt;- root[T]
+    <span class="hljs-keyword">while</span> x &#x2260; NIL
+        <span class="hljs-keyword">do</span> y &lt;- x
+            <span class="hljs-keyword">if</span> key[z] &lt; key[x]
+                <span class="hljs-keyword">then</span> x &lt;- left[x]
+                <span class="hljs-keyword">else</span> x &lt;- right[x]
+    p[z] &lt;- y
+    <span class="hljs-keyword">if</span> y = NIL
+        <span class="hljs-keyword">then</span> root[T] &lt;- z    // &#xBE48; &#xD2B8;&#xB9AC;&#xC778; &#xACBD;&#xC6B0;
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> key[z] &lt; key[y]
+            <span class="hljs-keyword">then</span> left[y] &lt;- z
+            <span class="hljs-keyword">else</span> right[y] &lt;- z
+</code></pre>
+<h3 id="delete">DELETE</h3>
+<ul>
+<li>SEARCH &#xC5F0;&#xC0B0; &#xC774;&#xD6C4; &#xB178;&#xB4DC;&#xB97C; &#xC0AD;&#xC81C;</li>
+<li>3&#xAC00;&#xC9C0; &#xACBD;&#xC6B0;<ul>
+<li>Case 1: &#xC790;&#xC2DD; &#xB178;&#xB4DC;&#xAC00; &#xC5C6;&#xB294; &#xACBD;&#xC6B0;, &#xADF8;&#xB0E5; &#xC0AD;&#xC81C;</li>
+<li>Case 2: &#xC790;&#xC2DD; &#xB178;&#xB4DC;&#xAC00; 1&#xAC1C;&#xC778; &#xACBD;&#xC6B0;, &#xC790;&#xC2E0;&#xC758; &#xC790;&#xC2DD;&#xB178;&#xB4DC;&#xB97C; &#xC6D0;&#xB798; &#xC790;&#xC2E0;&#xC758; &#xC704;&#xCE58;&#xB85C;  (&#xC120;&#xD615;&#xC801;&#xC774;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; A-B-C &#xB97C; A-C&#xB85C; &#xBC14;&#xAFBC;&#xB2E4;&#xACE0; &#xC0DD;&#xAC01;)</li>
+<li>Case 3: &#xC790;&#xC2DD;&#xB178;&#xB4DC;&#xAC00; 2&#xAC1C;&#xC778; &#xACBD;&#xC6B0;, successor &#xB610;&#xB294; predecessor&#xC758; &#xAC12;&#xC744; &#xC0AD;&#xC81C;&#xD558;&#xB824;&#xB294; &#xB178;&#xB4DC;&#xB85C; copy&#xD55C; &#xB4A4; successor &#xB178;&#xB4DC;&#xB97C; &#xB300;&#xC2E0; &#xC0AD;&#xC81C;&#xD55C;&#xB2E4;.</li>
+</ul>
 </li>
-<li>2019&#xB144; &#xD604;&#xC7AC; js &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;/&#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C; &#xC911; React&#xC5D0; &#xC774;&#xC5B4; &#xB450;&#xBC88;&#xC9F8;&#xB85C; &#xB300;&#xC911;&#xC801;</li>
-<li>&#xAE43;&#xD5C8;&#xBE0C; star &#xC218;&#xB294; &#xAC00;&#xC7A5; &#xB9CE;&#xC740; &#xB9CC;&#xD07C; &#xC8FC;&#xBAA9;&#xBC1B;&#xACE0; &#xC788;&#xB294; &#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C;&#xC774;&#xB2E4;.</li>
+<li>&#xC2DC;&#xAC04;&#xBCF5;&#xC7A1;&#xB3C4;: O(h)</li>
 </ul>
-<h3 id="vuejs-&#xC7A5;&#xC810;">Vue.js &#xC7A5;&#xC810;</h3>
+<pre><code class="lang-bash">TREE-DELETE(T, z)
+    <span class="hljs-keyword">if</span> left[z] = NIL or right[z] = NIL
+        <span class="hljs-keyword">then</span> y &lt;- z
+        <span class="hljs-keyword">else</span> y &lt;- TREE-SUCCESSOR(z)
+    <span class="hljs-keyword">if</span> left[y] &#x2260; NIL
+        <span class="hljs-keyword">then</span> x &lt;- left[y]
+        <span class="hljs-keyword">else</span> x &lt;- right[y]
+    <span class="hljs-keyword">if</span> x &#x2260; NIL
+        <span class="hljs-keyword">then</span> p[x] &lt;- p[y]
+    <span class="hljs-keyword">if</span> p[y] = NIL
+        <span class="hljs-keyword">then</span> root[T] &lt;- x
+        <span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> y = left[p[y]]
+            <span class="hljs-keyword">then</span> left[p[y]] &lt;- x
+            <span class="hljs-keyword">else</span> right[p[y]] &lt;- x
+       <span class="hljs-keyword">if</span> y &#x2260; z
+           <span class="hljs-keyword">then</span> key[z] &lt;- key[y]
+               copy y<span class="hljs-string">&apos;s satellite data into z
+       return y
+</span></code></pre>
+<h2 id="bst-&#xACB0;&#xB860;">BST &#xACB0;&#xB860;</h2>
 <ul>
-<li>cdn&#xB9CC; &#xC124;&#xCE58;&#xD574;&#xB3C4; &#xBC14;&#xB85C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB2E4;. = &#xCD08;&#xBCF4;&#xC790;&#xAC00; &#xC27D;&#xAC8C; &#xC811;&#xADFC;&#xD560; &#xC218; &#xC788;&#xB2E4;.</li>
-<li>&#xB2E4;&#xB978; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;&#xC640; &#xC27D;&#xAC8C; &#xD638;&#xD658;&#xD560; &#xC218; &#xC788;&#xB2E4;.</li>
-<li>&#xD0C0; &#xB77C;&#xC774;&#xBE0C;&#xB7EC;&#xB9AC;, &#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C;&#xC5D0; &#xBE44;&#xD574; &#xB7EC;&#xB2DD;&#xCEE4;&#xBE0C;&#xAC00; &#xB0AE;&#xB2E4;.</li>
-<li>&#xCEF4;&#xD3EC;&#xB10C;&#xD2B8; &#xB2E8;&#xC704;&#xC758; &#xAD6C;&#xC131;.</li>
-<li>&#xC810;&#xC9C4;&#xC801;&#xC778; &#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C; &#xAD6C;&#xC870;&#xD654;&#xB97C; &#xC9C0;&#xD5A5;&#xD558;&#xC5EC;, &#xBD80;&#xBD84;&#xC801;&#xC73C;&#xB85C; Vue.js&#xB97C; &#xC0AC;&#xC6A9;&#xD560; &#xC218; &#xC788;&#xB2E4;.</li>
+<li>&#xAC01;&#xC885; &#xC5F0;&#xC0B0;&#xC758; &#xC2DC;&#xAC04;&#xBCF5;&#xC7A1;&#xB3C4;&#xB294; O(h)</li>
+<li>&#xADF8;&#xB7EC;&#xB098;, &#xCD5C;&#xC545;&#xC758; &#xACBD;&#xC6B0; &#xD2B8;&#xB9AC;&#xC758; &#xB192;&#xC774; h=O(n)</li>
+<li>&#xADE0;&#xD615;&#xC7A1;&#xD78C; &#xD2B8;&#xB9AC;<ul>
+<li>&#xB808;&#xB4DC;-&#xBE14;&#xB799; &#xD2B8;&#xB9AC; &#xB4F1;</li>
+<li>&#xD0A4;&#xC758; &#xC0BD;&#xC785;&#xC774;&#xB098; &#xC0AD;&#xC81C;&#xC2DC; &#xCD94;&#xAC00;&#xB85C; &#xD2B8;&#xB9AC;&#xC758; &#xADE0;&#xD615;&#xC744; &#xC7A1;&#xC544;&#xC90C;&#xC73C;&#xB85C;&#xC368; &#xB192;&#xC774;&#xB97C; O(log&#x2082;n)&#xC73C;&#xB85C; &#xC720;&#xC9C0;</li>
 </ul>
-<h3 id="&#xBC30;&#xC6B0;&#xB294;-&#xC774;&#xC720;">&#xBC30;&#xC6B0;&#xB294; &#xC774;&#xC720;</h3>
-<ul>
-<li>&#xC790;&#xBC14;&#xC2A4;&#xD06C;&#xB9BD;&#xD2B8; &#xD504;&#xB808;&#xC784;&#xC6CC;&#xD06C; &#xD559;&#xC2B5;&#xC758; &#xD544;&#xC694;&#xC131;</li>
-<li>&#xC0C8; &#xD1A0;&#xC774; &#xD504;&#xB85C;&#xC81D;&#xD2B8; &#xC81C;&#xC791;&#xC5D0; &#xC801;&#xD569;&#xD560;&#xC9C0; &#xD310;&#xB2E8;&#xD558;&#xAE30; &#xC704;&#xD574;</li>
+</li>
 </ul>
+<h2 id="refer">Refer</h2>
+<p><a href="[https:/www.inflearn.com/course/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%95%EC%A2%8C/lecture/4097](https:/www.inflearn.com/course/&#xC54C;&#xACE0;&#xB9AC;&#xC998;-&#xAC15;&#xC88C;/lecture/4097">&#xC778;&#xD504;&#xB7F0; - &#xC601;&#xB9AC;&#xD55C; &#xD504;&#xB85C;&#xADF8;&#xB798;&#xBC0D;&#xC744; &#xC704;&#xD55C; &#xC54C;&#xACE0;&#xB9AC;&#xC998; &#xAC15;&#xC88C;</a>)</p>
 
                                 
                                 </section>
@@ -965,12 +1104,12 @@
 
             
                 
-                <a href="../React/rn-components.html" class="navigation navigation-prev " aria-label="Previous page: React Native 컴포넌트">
+                <a href="Sort.html" class="navigation navigation-prev " aria-label="Previous page: 정렬">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="1-create-vue.html" class="navigation navigation-next " aria-label="Next page: 시작하기">
+                <a href="Hash.html" class="navigation navigation-next " aria-label="Next page: 해시">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -981,7 +1120,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Vue란","level":"6.1","depth":1,"next":{"title":"시작하기","level":"6.2","depth":1,"path":"posts/Vue/1-create-vue.md","ref":"posts/Vue/1-create-vue.md","articles":[]},"previous":{"title":"React Native 컴포넌트","level":"5.4","depth":1,"path":"posts/React/rn-components.md","ref":"posts/React/rn-components.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"BASE_URL":"https://sumim00.github.io/TIL/"},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"posts/Vue/0-why-vue.md","mtime":"2019-10-07T06:23:26.243Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-06T13:24:36.129Z"},"basePath":"../..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"이진검색트리","level":"8.3","depth":1,"next":{"title":"해시","level":"8.4","depth":1,"path":"posts/Algorithm/Hash.md","ref":"posts/Algorithm/Hash.md","articles":[]},"previous":{"title":"정렬","level":"8.2","depth":1,"path":"posts/Algorithm/Sort.md","ref":"posts/Algorithm/Sort.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"BASE_URL":"https://sumim00.github.io/TIL/"},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"posts/Algorithm/BST.md","mtime":"2019-11-06T13:19:24.975Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-11-06T13:24:36.129Z"},"basePath":"../..","book":{"language":""}});
         });
     </script>
 </div>
