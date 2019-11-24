@@ -98,5 +98,6 @@
   * [svg](posts/etc/svg.md)
   * [이미지 스프라이트](posts/etc/image-sprite.md)
   * [FOUC](posts/etc/FOUC.md)
+  * [gatsby](posts/etc/gatsby.md)
 
 
