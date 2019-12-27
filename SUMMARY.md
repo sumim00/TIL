@@ -86,6 +86,8 @@
   * [디자인 패턴](posts/Web/mvc-mvp-mvvm.md)
   * [소프트웨어 아키텍쳐](posts/Web/software_architecture.md)
   * [정적 웹페이지와 동적 웹페이지](posts/Web/static-dynamic-webpage.md)
+  * [SPA와 SSR 비교](posts/Web/SPA-SSR.md)
+  * [CDN](posts/Web/CDN.md)
 
 
 
