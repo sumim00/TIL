@@ -91,6 +91,16 @@
 
 
 
+## C
+
+- [씹어먹는 C언어 강의노트 1~4강](posts/C/cnote-01.md)
+- [씹어먹는 C언어 강의노트 5~7강](posts/C/cnote-02.md)
+- [씹어먹는 C언어 강의노트 8~10강](posts/C/cnote-03.md)
+- [씹어먹는 C언어 강의노트 11~12강](posts/C/cnote-04.md)
+- [씹어먹는 C언어 강의노트 13~14강](posts/C/cnote-05.md)
+
+
+
 ## etc.
 
   * [깃플로우](posts/etc/git-flow.md)
