@@ -99,6 +99,8 @@
 - [씹어먹는 C언어 강의노트 11~12강](posts/C/cnote-04.md)
 - [씹어먹는 C언어 강의노트 13~14강](posts/C/cnote-05.md)
 - [씹어먹는 C언어 강의노트 15강](posts/C/cnote-06.md)
+- [씹어먹는 C언어 강의노트 16강](posts/C/cnote-07.md)
+
 
 
 ## etc.
