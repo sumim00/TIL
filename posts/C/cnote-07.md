@@ -273,3 +273,238 @@ char copy_str(char* dest, const char* src) {
 }
 ```
 
+
+
+### 16-3. 구조체와 친구들(공용체(union), 열거형(enum))
+
+
+
+##### 구조체 안의 구조체
+
+```c
+/* 구조체 안의 구조체 */
+#include <stdio.h>
+struct employee {
+	int age;
+	int salary;
+};
+struct company {
+	struct employee data;
+	char name[10];
+};
+int main() {
+	struct company Kim;
+
+	Kim.data.age = 31;
+	Kim.data.salary = 3000000;
+
+	printf("Kim's age : %d \n", Kim.data.age);
+	printf("Kim's salary : %d$/year \n", Kim.data.salary);
+
+	return 0;
+}
+```
+
+
+
+##### 구조체를 리턴하는 함수
+
+```c
+/* 구조체를 리턴하는 함수 */
+#include <stdio.h>
+struct AA function(int j);
+struct AA {
+	int i;
+};
+int main() {
+	struct AA a; // 구조체 변수 정의
+
+	a = function(10);
+	printf("a.i : %d \n", a.i);
+
+	return 0;
+}
+struct AA function(int j) {
+	struct AA A;
+	A.i = j;
+
+	return A;
+}
+```
+
+
+
+##### 구조체 변수의 정의 방법
+
+```c
+/* 구조체 변수의 정의 방법 */
+#include <stdio.h>
+char copy_str(char* dest, char* src);
+int Print_Obj_Status(struct obj* OBJ);
+struct obj {
+	char name[20];
+	int x, y;
+} Ball;
+int main() {
+    // struct obj Ball = {.name = "123", .x = 3, .y = 4};
+    // 이런 식으로도 작업 가능
+	Ball.x = 3;
+	Ball.y = 4;
+	copy_str(Ball.name, "RED BALL");
+
+	Print_Obj_Status(&Ball);
+
+	return 0;
+}
+int Print_Obj_Status(struct obj *OBJ) {
+	printf("Location of %s \n", (*OBJ).name);
+	printf("( %d , %d ) \n", OBJ->x, OBJ->y);
+
+	return 0;
+}
+char copy_str(char* dest, char* src) {
+	while (*src != NULL) {
+		*dest = *src;
+		src++;
+		dest++;
+	}
+	*dest = '\0';
+
+	return 1;
+}
+```
+
+```c
+/* 구조체 변수의 정의 방법 */
+#include <stdio.h>
+int Print_Status(struct HUMAN *human);
+struct HUMAN {
+	int age;
+	int height;
+	int weight;
+	int gender;
+};
+int main() {
+	struct HUMAN Eve = { 27, 166, 58, 0 };
+	struct HUMAN Adam = { 31, 182, 75, 1 };
+	
+	Print_Status(&Adam);
+	Print_Status(&Eve);
+
+
+	return 0;
+}
+int Print_Status(struct HUMAN *human) {
+	if (human->gender == 0) {
+		printf("FEMALE \n");
+	}
+	else {
+		printf("MALE \n");
+	}
+
+	printf("AGE: %d, HEIGHT: %d, WEIGHT: %d \n", human->age, human->height, human->weight);
+	if (human->gender == 0 && human->height >= 180) {
+		printf("HE IS A WINNER! \n");
+	}
+	else if (human->gender == 0 && human->height <= 180) {
+		printf("HE IS A LOSER! \n");
+	}
+
+	return 0;
+}
+```
+
+
+
+##### 구조체 초기화 방식
+
+```c
+///////////////////// 지역
+struct obj {
+  char name[20];
+  int x, y;
+}
+int main(){
+    struct obj Ball = {.name = "abc", .x = 3, .y = 4};
+}
+
+///////////////////// 글로벌
+struct obj {
+  char name[20];
+  int x, y;
+} Ball = {"abc", 3, 4};
+```
+
+
+
+##### 공용체(union)
+
+- 공용체는 각 멤버들의 메모리 시작 주소가 동일하며 구조체와 달리 메모리를 공유한다.
+
+![](https://modoocode.com/img/1210640D4C14DC693AF455.webp)
+
+```c
+/* 공용체 */
+#include <stdio.h>
+union A {
+	int i;
+	char j;
+};
+int main() {
+	union A a;
+	a.i = 0x12345678;
+	printf("%x", a.j);
+
+	return 0;
+}
+
+// answer
+// 78
+```
+
+- 일반적으로 컴퓨터에서는 높은 주소값에 상위 비트를 적는 리틀 엔디안을 사용하고 있다.
+
+
+
+##### 열거형 (Enum)
+
+- 열거형으로 정의하면 컴파일러는 각 원소에 0부터 차례로 정수값을 매긴다.
+- 0부터 순서대로가 아닌 원하는 수로 지정할 수 있다.
+
+```c
+/* 열거형의 도입 */
+#include <stdio.h>
+enum { RED, BLUE, WHITE, BLACK};
+int main() {
+	int palette = 2;
+	switch (palette) {
+		case RED:
+			printf("palette : RED \n");
+			break;
+		case BLUE:
+			printf("palette : BLUE \n");
+			break;
+		case WHITE:
+			printf("palette : WHITE \n");
+			break;
+		case BLACK:
+			printf("palette : BLACK \n");
+			break;
+	}
+
+	return 0;
+}
+```
+
+```c
+/* 열거형의 도입 2 */
+#include <stdio.h>
+enum { RED = 3, BLUE, WHITE, BLACK};
+int main() {
+	int palette = BLACK;
+	printf("%d \n", palette);
+
+	return 0;
+}
+```
+
