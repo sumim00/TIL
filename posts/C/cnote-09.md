@@ -1,4 +1,4 @@
-# 씹어먹는 C언어 필기 (19강)
+# 씹어먹는 C언어 필기 (19~20강)
 
 > Psi님의 [씹어먹는 C언어](<https://modoocode.com/231>) 강좌를 수강하며 기록한 노트입니다.
 
@@ -129,8 +129,6 @@ int main(int argc, char **argv) {
 
 
 
-##### 
-
 ##### 2차원 배열 메모리 동적 할당
 
 - 메모리 해제는 할당 순서와 정반대로 실행한다.
@@ -224,5 +222,225 @@ void get_average(int **arr, int numStudent, int numSubject) {
         printf("과목 %d 평균 점수 : %d \n", i, sum / numStudent);
     }
 }
+```
+
+
+
+### 20-2. 동동동 메모리 동적 할당 + 메모리 갖고 놀기
+
+##### 구조체의 동적 할당
+
+```c
+/* 구조체 동적 할당 */
+#include <stdio.h>
+#include <stdlib.h>
+
+struct Something {
+    int a, b;
+};
+int main() {
+    struct Something* arr;
+    int size, i;
+
+    printf("원하는 구조체 배열의 크기 : ");
+    scanf("%d", &size);
+
+    arr = (struct Something *)malloc(sizeof(struct Something) * size);
+
+    for (i = 0; i < size; i++) {
+        printf("arr[%d].a : ", i);
+        scanf("%d", &arr[i].a);
+        printf("arr[%d].b : ", i);
+        scanf("%d", &arr[i].b);
+    }
+
+    for (i = 0; i < size; i++) {
+        printf("arr[%d].a = %d, arr[%d].b = %d \n", i, arr[i].a, i, arr[i].b);
+    }
+
+    free(arr);
+
+    return 0;
+}
+```
+
+
+
+##### 노드
+
+- 동적 할당의 한계 : 사용자가 원하는 만큼의 크기를 할당받을 수 있지만, 추가적인 데이터가 생길 경우 기존의 공간을 전부 새로 잡아야 한다는 문제가 발생한다.
+- 노드 : 데이터 뒤에 다음 노드를 가리키는 포인터를 추가한다. 배열 중간에 새 원소를 집어넣는 것이 가능해진다.
+- 노드의 장점 : 배열과 달리 추가/삭제/삽입이 편리하다.
+- 노드의 단점 : N번째 원소에 접근하기 위해 헤드로부터 N번째까지 일일히 찾아야 한다.
+
+```c
+struct Node {
+    int data; /* 데이터 */
+    struct Node* nextNode; /* 다음 노드를 가리키는 부분 */
+};
+```
+
+```c
+/* 노드 */
+#include <stdio.h>
+#include <stdlib.h>
+void PrintNodeFrom(struct Node* from);
+struct Node* InsertNode(struct Node* current, int data);
+void DestroyNode(struct Node* destroy, struct Node* head);
+struct Node* CreateNode(int data);
+
+struct Node {
+    int data; /* 데이터 */
+    struct Node* nextNode; /* 다음 노드를 가리키는 부분 */
+};
+
+
+int main() {
+    struct Node* Node1 = CreateNode(100);
+    struct Node* Node2 = InsertNode(Node1, 200);
+    struct Node* Node3 = InsertNode(Node2, 300);
+    struct Node* Node4 = InsertNode(Node2, 400);
+
+    PrintNodeFrom(Node1);
+    return 0;
+}
+
+/* from이 NULL일 때까지, 즉 끝 부분에 도달할 때까지 출력하는 함수 */
+void PrintNodeFrom(struct Node* from) {
+    while (from) {
+        printf("노드의 데이터 : %d \n", from->data);
+        from = from->nextNode;
+    }
+}
+
+/* current 라는 노드 뒤에 노드를 새로 만들어 넣는 함수 */
+struct Node* InsertNode(struct Node* current, int data) {
+    struct Node* after = current->nextNode;
+
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+
+    newNode->data = data;
+    newNode->nextNode = after;
+
+    current->nextNode = newNode;
+
+    return newNode;
+}
+
+/* 선택된 노드를 파괴하는 함수 */
+void DestroyNode(struct Node* destroy, struct Node* head) {
+    struct Node* next = head;
+
+    if (destroy == head) {
+        free(destroy);
+        return;
+    }
+
+    while (next) {
+        if (next->nextNode == destroy) {
+            next->nextNode = destroy->nextNode;
+        }
+        next = next->nextNode;
+    }
+    free(destroy);
+}
+
+/* 새 노드를 만드는 함수 */
+struct Node* CreateNode(int data) {
+    struct Node* newNode = (struct Node*)malloc(sizeof(struct Node));
+
+    newNode->data = data;
+    newNode->nextNode = NULL;
+
+    return newNode;
+}
+```
+
+
+
+##### 메모리 관련 함수 
+
+- `string.h` 에 정의되어 있다.
+
+- `memcpy` :  메모리를 복사
+  - `memcpy(목적지, 원본, 복사할길이)` 형태로 사용.
+- `memmove` : 메모리의 일부를 옮김
+  - `memmove(추가할 위치, 복사할 위치, 추가할 길이)` 형태로 사용.
+- `memcmp` : 2개의 메모리를 비교
+  - `memcmp(비교대상1, 비교대상2, 비교할 byte 길이)` 형태로 사용.
+
+
+
+```c
+/* memcpy 함수 */
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[50] = "I love Chewing C hahaha";
+    char str2[50];
+    char str3[50];
+
+    memcpy(str2, str, strlen(str) + 1);
+    memcpy(str3, "hello", 6);
+
+    printf("%s \n", str);
+    printf("%s \n", str2);
+    printf("%s \n", str3);
+
+    return 0;
+}
+
+// answer
+I love Chewing C hahaha
+I love Chewing C hahaha
+hello
+```
+
+```c
+/* memmove 함수 */
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char str[50] = "I love Chewing C hahaha";
+
+    printf("%s \n", str);
+    printf("memmove 이후 \n");
+
+    memmove(str + 23, str + 17, 6);
+
+    printf("%s \n", str);
+
+    return 0;
+}
+
+// answer
+I love Chewing C hahaha
+memmove 이후
+I love Chewing C hahahahahaha
+```
+
+```c
+/* memcmp함수 */
+#include <stdio.h>
+#include <string.h>
+
+int main() {
+    char arr[10] = { 1, 2, 3, 4, 5 };
+    char arr2[10] = { 1, 2, 3, 4, 5 };
+
+    if (memcmp(arr, arr2, 5) == 0) {
+        printf("arr와 arr2는 일치! \n");
+    }
+    else {
+        printf("arr와 arr2는 불일치! \n");
+    }
+
+    return 0;
+}
+
+// answer
+arr와 arr2는 일치!
 ```
 
