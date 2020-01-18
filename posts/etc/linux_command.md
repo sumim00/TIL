@@ -350,3 +350,122 @@ synax : awk options 'selection _criteria {action}' input-file
 - head FILE | awk '{print $1}'
 - head FILE | awk -F: '/j/ {print $1}'
 - head aa | awk -F: '/aa/ {print NR "===>" $1, NF}'
+
+
+
+##### find
+
+조건에 맞는 파일을 찾아 명령을 수행한다.
+
+기본 사용방법: find [OPTIONS] path EXPR
+
+자주 사용되는 옵션
+
+- 조건
+  - -name : 이름으로 검색
+  - -regex : regex에 매치로 검색
+  - -empty : 빈 디렉터리 혹은 빈 검색
+  - -size : 사이즈로 검색
+    - -N : 이하
+    - -N : 이상
+  - -type : 파일 타입으로 검색
+    - d : 디렉터리
+    - p : named pope
+    - f : regular file
+    - s : socket
+  - -perm : 퍼미션으로 검색
+    - mode : 정확히 일치하는 파일
+    - +mode : 모든 flag가 포함된 파일
+    - /mode : 어떤 flag라도 포함된 파일
+- 액션
+  - -delete : 파일 삭제
+  - -ls : ls -dils 명령 수행
+  - -print : 파일 이름 출력
+  - -printf : 파일 이름을 포맷에 맞게 출력
+  - -exec : 주어진 명령 수행
+  - -execdir : 해당 디렉터리로 이동하여 명령 실행
+  - -ok : 사용자에게 확인 후 exec
+  - -okdir : 사용자에게 확인 후 execdir
+
+사용 예제
+
+- find .
+- find `pwd` -name "*.txt" // 절대경로로 .txt 출력
+- find `pwd` -regextype egrep -regex '.*kl.*.txt$' // 중간에 kl이 있고 .txt로 끝나는 파일
+- find . -perm 0777 | wc -l // 퍼미션이 777인 파일 개수 출력
+- find . -perm /u+x -ls
+- find . -name "*.txt" -exec stat {} \; // exec, ok는 `\;`로 마무리
+- find . -name "*.txt" -ok rm -f {} \;
+
+
+
+##### grep
+
+파일 내용 중 원하는 내용을 찾는다.
+
+grep [OPTIONS] PATTERN [FILE...]
+
+자주 사용되는 옵션
+
+- -r : recursive (하위 디렉터리도 검색)
+- -i : ignore case
+- -v : invert match (매치가 안되는 경우를 알려줌)
+- -q : quiet mode 
+
+사용 예제
+
+- grep fork *.c
+- grep j *.txt | awk -F: '{ print $1 }' | sort -u // j가 포함된 txt파일 리스트를 출력하되, 앞부분 (파일명)만 유니크하게 정렬하여 출력
+- grep j *.txt -q // 하고 `echo $?`를 쳤을 때, 성공적으로 찾으면 0 아니면 1 반환
+-  grep "\<for\>" *.txt // `\< 내용 \>` 하면 단어 단위로 검색 가능
+- grep "^$" *.txt // `^`는 입력한 단어로 시작하는 것만, `$` 는 입력한 단어로 끝나는 것만 출력. `^$`를 쓰면 안에 내용이 없는 파일 반환.
+- grep "^static.*(void)$" *.c // static으로 시작하고 void로 끝나는 파일 반환.
+
+
+
+##### aprppos
+
+man page 이름과 설명을 검색한다.
+
+자주 사용되는 옵션
+
+- -s, --sections=LIST, --section=LIST : 탐색할 섹션을 colon으로 구분하여 입력
+
+사용 예제
+
+- apropos pthread
+- apropos pthread -s 7
+- apropos '.*'
+
+
+
+##### locate 
+
+설명
+
+- 파일의 위치를 찾아 보여준다.
+- 단, updatedb가 저장해놓은 DB파일 내에서 검색하므로 누락 파일이 생길 수 있음.
+- locate [OPTION]...PATTERN...
+
+자주 사용되는 옵션
+
+- -i , --ignore-case대소문자 구분없이 검색
+- -l, --limit, -n LIMIT : 출력 결과를 LIMIT만큼 출력
+- --regex : PATTERN을 REGEX로 해석
+
+사용 예제
+
+- locate main.c
+- locate --regex "\/main.c$" -n 3 :// 맨 끝이 `/main.c`인 파일의 위치를 3개만 출력
+
+
+
+##### which
+
+실행 파일의 위치를 보여준다.
+
+사용 예제
+
+- which ls // ls툴의 위치
+- which chmod
+- which ls strace chmod
