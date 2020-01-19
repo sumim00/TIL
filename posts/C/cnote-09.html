@@ -1,0 +1,1626 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>19강 main함수의 인자, 텅 빈 void형 / 20강 메모리 동적 할당 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="cnote-10.html" />
+    
+    
+    <link rel="prev" href="cnote-08.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    README
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">CSS</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../css/css_naming.html">
+            
+                <a href="../css/css_naming.html">
+            
+                    
+                    CSS 방법론
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../css/css_animation.html">
+            
+                <a href="../css/css_animation.html">
+            
+                    
+                    animation, keyframe 속성
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../css/grid.html">
+            
+                <a href="../css/grid.html">
+            
+                    
+                    grid 속성
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../css/css_flex_vendor_prefix.html">
+            
+                <a href="../css/css_flex_vendor_prefix.html">
+            
+                    
+                    flex 속성 벤더 프리픽스
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../css/css_sticky.html">
+            
+                <a href="../css/css_sticky.html">
+            
+                    
+                    sticky 속성
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../css/css_logical_properties.html">
+            
+                <a href="../css/css_logical_properties.html">
+            
+                    
+                    논리적 속성
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../css/css_cascading.html">
+            
+                <a href="../css/css_cascading.html">
+            
+                    
+                    스타일 상속과 우선 순위
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">JavaScript</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../JavaScript/js-regex.html">
+            
+                <a href="../JavaScript/js-regex.html">
+            
+                    
+                    정규표현식 (RegExp)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../JavaScript/js-scope.html">
+            
+                <a href="../JavaScript/js-scope.html">
+            
+                    
+                    Scope
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../JavaScript/js-return.html">
+            
+                <a href="../JavaScript/js-return.html">
+            
+                    
+                    return의 역할
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../JavaScript/js-hoisting.html">
+            
+                <a href="../JavaScript/js-hoisting.html">
+            
+                    
+                    Hoisting
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="../JavaScript/js-for.html">
+            
+                <a href="../JavaScript/js-for.html">
+            
+                    
+                    for문
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="../JavaScript/js-Math.html">
+            
+                <a href="../JavaScript/js-Math.html">
+            
+                    
+                    Math 객체에서 자주 사용하는 메소드
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.7" data-path="../JavaScript/js-slice.html">
+            
+                <a href="../JavaScript/js-slice.html">
+            
+                    
+                    split(), splice(), slice() 정리
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.8" data-path="../JavaScript/js-sort.html">
+            
+                <a href="../JavaScript/js-sort.html">
+            
+                    
+                    sort() 함수
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.9" data-path="../JavaScript/js-var-let-scope.html">
+            
+                <a href="../JavaScript/js-var-let-scope.html">
+            
+                    
+                    var, let, const
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.10" data-path="../JavaScript/js-CORS.html">
+            
+                <a href="../JavaScript/js-CORS.html">
+            
+                    
+                    크로스 도메인 이슈와 CORS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">TypeScript</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../TypeScript/01_why_TypeScript.html">
+            
+                <a href="../TypeScript/01_why_TypeScript.html">
+            
+                    
+                    TypeScript란
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../TypeScript/02_Default_types.html">
+            
+                <a href="../TypeScript/02_Default_types.html">
+            
+                    
+                    타입 정의하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="../TypeScript/03_Compiling.html">
+            
+                <a href="../TypeScript/03_Compiling.html">
+            
+                    
+                    컴파일러 사용법 및 옵션
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="../TypeScript/04_Interface.html">
+            
+                <a href="../TypeScript/04_Interface.html">
+            
+                    
+                    Interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="../TypeScript/05_class.html">
+            
+                <a href="../TypeScript/05_class.html">
+            
+                    
+                    class
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">React</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../React/rn-redux.html">
+            
+                <a href="../React/rn-redux.html">
+            
+                    
+                    Redux
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../React/rn-redux-saga.html">
+            
+                <a href="../React/rn-redux-saga.html">
+            
+                    
+                    Redux-saga
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="../React/rn-start.html">
+            
+                <a href="../React/rn-start.html">
+            
+                    
+                    React Native 시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="../React/rn-components.html">
+            
+                <a href="../React/rn-components.html">
+            
+                    
+                    React Native 컴포넌트
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Vue</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../Vue/0-why-vue.html">
+            
+                <a href="../Vue/0-why-vue.html">
+            
+                    
+                    Vue란
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="../Vue/1-create-vue.html">
+            
+                <a href="../Vue/1-create-vue.html">
+            
+                    
+                    시작하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="../Vue/2-vue-router.html">
+            
+                <a href="../Vue/2-vue-router.html">
+            
+                    
+                    Vue 라우터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.4" data-path="../Vue/vue-component.html">
+            
+                <a href="../Vue/vue-component.html">
+            
+                    
+                    컴포넌트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.5" data-path="../Vue/vue-computed-method-watch.html">
+            
+                <a href="../Vue/vue-computed-method-watch.html">
+            
+                    
+                    computed,method,watch
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.6" data-path="../Vue/vue-event.html">
+            
+                <a href="../Vue/vue-event.html">
+            
+                    
+                    event
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.7" data-path="../Vue/vue-lifecycle.html">
+            
+                <a href="../Vue/vue-lifecycle.html">
+            
+                    
+                    lifecycle
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.8" data-path="../Vue/nuxt.html">
+            
+                <a href="../Vue/nuxt.html">
+            
+                    
+                    Nuxt.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">DB</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../DB/CRUD.html">
+            
+                <a href="../DB/CRUD.html">
+            
+                    
+                    CRUD
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../DB/MongoDB.html">
+            
+                <a href="../DB/MongoDB.html">
+            
+                    
+                    MongoDB
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../DB/NoSQL.html">
+            
+                <a href="../DB/NoSQL.html">
+            
+                    
+                    NoSQL
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Algorithm</li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../Algorithm/Recursion.html">
+            
+                <a href="../Algorithm/Recursion.html">
+            
+                    
+                    재귀
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.2" data-path="../Algorithm/Sort.html">
+            
+                <a href="../Algorithm/Sort.html">
+            
+                    
+                    정렬
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.3" data-path="../Algorithm/BST.html">
+            
+                <a href="../Algorithm/BST.html">
+            
+                    
+                    이진검색트리
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="8.4" data-path="../Algorithm/Hash.html">
+            
+                <a href="../Algorithm/Hash.html">
+            
+                    
+                    해시
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Web</li>
+        
+        
+    
+        <li class="chapter " data-level="9.1" data-path="../Web/web-works.html">
+            
+                <a href="../Web/web-works.html">
+            
+                    
+                    웹 동작방식
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.2" data-path="../Web/web-http.html">
+            
+                <a href="../Web/web-http.html">
+            
+                    
+                    HTTP
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.3" data-path="../Web/web-component.html">
+            
+                <a href="../Web/web-component.html">
+            
+                    
+                    웹 컴포넌트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.4" data-path="../Web/mvc-mvp-mvvm.html">
+            
+                <a href="../Web/mvc-mvp-mvvm.html">
+            
+                    
+                    디자인 패턴
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.5" data-path="../Web/software_architecture.html">
+            
+                <a href="../Web/software_architecture.html">
+            
+                    
+                    소프트웨어 아키텍쳐
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.6" data-path="../Web/static-dynamic-webpage.html">
+            
+                <a href="../Web/static-dynamic-webpage.html">
+            
+                    
+                    정적 웹페이지와 동적 웹페이지
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.7" data-path="../Web/SPA-SSR.html">
+            
+                <a href="../Web/SPA-SSR.html">
+            
+                    
+                    SPA와 SSR 비교
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="9.8" data-path="../Web/CDN.html">
+            
+                <a href="../Web/CDN.html">
+            
+                    
+                    CDN
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">씹어먹는 C언어 강의노트</li>
+        
+        
+    
+        <li class="chapter " data-level="10.1" data-path="cnote-01.html">
+            
+                <a href="cnote-01.html">
+            
+                    
+                    2강 C언어 맛보기 / 3강 변수 / 4강 연산자
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.2" data-path="cnote-02.html">
+            
+                <a href="cnote-02.html">
+            
+                    
+                    5강 문자 입력 받기 / 6강 if문 / 7강 for,while문
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.3" data-path="cnote-03.html">
+            
+                <a href="cnote-03.html">
+            
+                    
+                    9강 switch문 / 10강 형 변환
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.4" data-path="cnote-04.html">
+            
+                <a href="cnote-04.html">
+            
+                    
+                    11강 배열과 상수, 12 포인터
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.5" data-path="cnote-05.html">
+            
+                <a href="cnote-05.html">
+            
+                    
+                    13강 마술 상자 함수
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.6" data-path="cnote-06.html">
+            
+                <a href="cnote-06.html">
+            
+                    
+                    15강 일로와봐, 문자열
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.7" data-path="cnote-07.html">
+            
+                <a href="cnote-07.html">
+            
+                    
+                    16강 모아 모아 구조체
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.8" data-path="cnote-08.html">
+            
+                <a href="cnote-08.html">
+            
+                    
+                    17강 변수 및 데이터 세그먼트 / 18강 파일 뽀개기
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="10.9" data-path="cnote-09.html">
+            
+                <a href="cnote-09.html">
+            
+                    
+                    19강 main함수의 인자, 텅 빈 void형 / 20강 메모리 동적 할당
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.10" data-path="cnote-10.html">
+            
+                <a href="cnote-10.html">
+            
+                    
+                    21강 매크로 함수, 인라인 함수 / 22강 잡다한 키워드들
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="10.11" data-path="cnote-11.html">
+            
+                <a href="cnote-11.html">
+            
+                    
+                    23강 파일하고 이야기하기
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">etc.</li>
+        
+        
+    
+        <li class="chapter " data-level="11.1" data-path="../etc/git-flow.html">
+            
+                <a href="../etc/git-flow.html">
+            
+                    
+                    깃플로우
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.2" data-path="../etc/app_accessibility.html">
+            
+                <a href="../etc/app_accessibility.html">
+            
+                    
+                    모바일 애플리케이션 접근성 지침 2.0
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.3" data-path="../etc/storybook.html">
+            
+                <a href="../etc/storybook.html">
+            
+                    
+                    storybook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.4" data-path="../etc/sql_commands.html">
+            
+                <a href="../etc/sql_commands.html">
+            
+                    
+                    SQL 명령문
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.5" data-path="../etc/GitBook.html">
+            
+                <a href="../etc/GitBook.html">
+            
+                    
+                    gitbook
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.6" data-path="../etc/svg.html">
+            
+                <a href="../etc/svg.html">
+            
+                    
+                    svg
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.7" data-path="../etc/image-sprite.html">
+            
+                <a href="../etc/image-sprite.html">
+            
+                    
+                    이미지 스프라이트
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.8" data-path="../etc/FOUC.html">
+            
+                <a href="../etc/FOUC.html">
+            
+                    
+                    FOUC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.9" data-path="../etc/gatsby.html">
+            
+                <a href="../etc/gatsby.html">
+            
+                    
+                    gatsby
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.10" data-path="../etc/linux_command.html">
+            
+                <a href="../etc/linux_command.html">
+            
+                    
+                    Linux 커맨드
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="11.11" data-path="../etc/vim_tutor.html">
+            
+                <a href="../etc/vim_tutor.html">
+            
+                    
+                    vim 튜토리얼 정리
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >19강 main함수의 인자, 텅 빈 void형 / 20강 메모리 동적 할당</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#xC539;&#xC5B4;&#xBA39;&#xB294;-c&#xC5B8;&#xC5B4;-&#xD544;&#xAE30;-1920&#xAC15;">&#xC539;&#xC5B4;&#xBA39;&#xB294; C&#xC5B8;&#xC5B4; &#xD544;&#xAE30; (19~20&#xAC15;)</h1>
+<blockquote>
+<p>Psi&#xB2D8;&#xC758; <a href="https://modoocode.com/231" target="_blank">&#xC539;&#xC5B4;&#xBA39;&#xB294; C&#xC5B8;&#xC5B4;</a> &#xAC15;&#xC88C;&#xB97C; &#xC218;&#xAC15;&#xD558;&#xBA70; &#xAE30;&#xB85D;&#xD55C; &#xB178;&#xD2B8;&#xC785;&#xB2C8;&#xB2E4;.</p>
+</blockquote>
+<h3 id="19-main-&#xD568;&#xC218;&#xC758;-&#xC778;&#xC790;--&#xD145;-&#xBE48;-void-&#xD615;">19. main &#xD568;&#xC218;&#xC758; &#xC778;&#xC790;,  &#xD145; &#xBE48; void &#xD615;</h3>
+<h5 id="void&#xD615;&#xC758;-&#xD568;&#xC218;-void&#xD615;&#xC758;-&#xD3EC;&#xC778;&#xD130;&#xC5D0;-&#xB300;&#xD55C;-&#xC774;&#xD574;"><code>void</code>&#xD615;&#xC758; &#xD568;&#xC218;, <code>void</code>&#xD615;&#xC758; &#xD3EC;&#xC778;&#xD130;&#xC5D0; &#xB300;&#xD55C; &#xC774;&#xD574;</h5>
+<ul>
+<li><code>void</code>&#xD615; &#xD568;&#xC218; : &#xC544;&#xBB34;&#xAC83;&#xB3C4; &#xB9AC;&#xD134;&#xD558;&#xC9C0; &#xC54A;&#xB294; &#xD568;&#xC218;.</li>
+<li><code>void</code>&#xD615; &#xBCC0;&#xC218; : &#xBA54;&#xBAA8;&#xB9AC;&#xC0C1;&#xC5D0; &#xC5BC;&#xB9CC;&#xD07C;&#xC758; &#xACF5;&#xAC04;&#xC744; &#xC124;&#xC815;&#xD574;&#xC57C; &#xD558;&#xB294;&#xC9C0; &#xBAA8;&#xB974;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; &#xD3EC;&#xC778;&#xD130;&#xC5D0; &#xC0AC;&#xC6A9;&#xD558;&#xAE30; &#xC801;&#xD569;&#xD558;&#xB2E4;.</li>
+</ul>
+<pre><code class="lang-c"><span class="hljs-comment">/* void */</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">swap</span><span class="hljs-params">(<span class="hljs-keyword">int</span>* a, <span class="hljs-keyword">int</span>* b)</span> </span>{
+    <span class="hljs-keyword">int</span> temp;
+    temp = *a;
+    *a = *b;
+    *b = temp;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">int</span> a = <span class="hljs-number">5</span>;
+    <span class="hljs-keyword">int</span> b = <span class="hljs-number">3</span>;
+
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;a = %d, b = %d&quot;</span>, a, b);
+
+    swap(&amp;a, &amp;b);
+
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;a = %d, b = %d&quot;</span>, a, b);
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<pre><code class="lang-c"><span class="hljs-comment">/* &#xC784;&#xC758;&#xC758; &#xC8FC;&#xC18C;&#xAC12; p&#xB85C;&#xBD80;&#xD130; byte&#xB9CC;&#xD07C; &#xC77D;&#xB294; &#xD568;&#xC218; */</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">read_char</span><span class="hljs-params">(<span class="hljs-keyword">void</span>* p, <span class="hljs-keyword">int</span> byte)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">int</span> arr[<span class="hljs-number">1</span>] = { <span class="hljs-number">0x12345678</span> };
+
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;arr : %x \n&quot;</span>, arr[<span class="hljs-number">0</span>]);
+    read_char(arr, <span class="hljs-number">4</span>);
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">read_char</span><span class="hljs-params">(<span class="hljs-keyword">void</span> *p, <span class="hljs-keyword">int</span> byte)</span> </span>{
+    <span class="hljs-keyword">do</span> {
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%x \n&quot;</span>, *(<span class="hljs-keyword">char</span>*)p);
+        byte--;
+        p = (<span class="hljs-keyword">char</span>*)p + <span class="hljs-number">1</span>;
+    } <span class="hljs-keyword">while</span> (p &amp;&amp; byte);
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h5 id="main-&#xD568;&#xC218;&#xC758;-&#xC778;&#xC790;&#xC5D0;-&#xB300;&#xD55C;-&#xC774;&#xD574;argc-argv"><code>main</code> &#xD568;&#xC218;&#xC758; &#xC778;&#xC790;&#xC5D0; &#xB300;&#xD55C; &#xC774;&#xD574;(<code>argc</code>, <code>argv</code>)</h5>
+<ul>
+<li><code>argc</code> : &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC758; &#xBC1B;&#xC740; &#xC778;&#xC790;&#xC758; &#xAC1C;&#xC218;</li>
+<li><code>argv</code> :  &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC774; &#xBC1B;&#xC740; &#xC778;&#xC790;&#xC758; &#xBC30;&#xC5F4;</li>
+</ul>
+<pre><code class="lang-c"><span class="hljs-comment">/* main &#xD568;&#xC218;&#xC758; &#xC778;&#xC790; */</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">int</span> argc, <span class="hljs-keyword">char</span> **argv)</span> </span>{
+    <span class="hljs-keyword">int</span> i;
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#xBC1B;&#xC740; &#xC778;&#xC790;&#xC758; &#xAC1C;&#xC218; : %d \n&quot;</span>, argc);
+    <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; argc; i++) {
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#xC774; &#xD504;&#xB85C;&#xADF8;&#xB7A8;&#xC774; &#xBC1B;&#xC740; &#xC778;&#xC790; : %s \n&quot;</span>, argv[i]);
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h3 id="20-1-&#xB3D9;&#xB3D9;&#xB3D9;-&#xBA54;&#xBAA8;&#xB9AC;-&#xB3D9;&#xC801;-&#xD560;&#xB2F9;-dynamic-memory-alocation">20-1. &#xB3D9;&#xB3D9;&#xB3D9; &#xBA54;&#xBAA8;&#xB9AC; &#xB3D9;&#xC801; &#xD560;&#xB2F9; (Dynamic Memory Alocation)</h3>
+<h5 id="malloc-&#xD568;&#xC218;&#xC758;-&#xC774;&#xD574;"><code>malloc</code> &#xD568;&#xC218;&#xC758; &#xC774;&#xD574;</h5>
+<ul>
+<li><code>malloc()</code> : &#xC790;&#xC2E0;&#xC774; &#xD560;&#xB2F9;&#xD55C; &#xBA54;&#xBAA8;&#xB9AC;&#xC758; &#xC2DC;&#xC791; &#xC8FC;&#xC18C;&#xB97C; &#xB9AC;&#xD134;. &#xACF5;&#xC6D0;&#xC5D0;&#xC11C; &#xC6D0;&#xD558;&#xB294; &#xD06C;&#xAE30;&#xC758; &#xB3D7;&#xC790;&#xB9AC;&#xB97C; &#xAE54;&#xC544;&#xC8FC;&#xB294; &#xC5ED;&#xD560;.</li>
+<li><code>free()</code>: &#xD560;&#xB2F9;&#xBC1B;&#xC740; &#xBA54;&#xBAA8;&#xB9AC; &#xC601;&#xC5ED;&#xC744; &#xB2E4; &#xC4F4; &#xD6C4; &#xB2E4;&#xC2DC; &#xCEF4;&#xD4E8;&#xD130;&#xC5D0; &#xB3CC;&#xB824;&#xC8FC;&#xB294; &#xD568;&#xC218;. free&#xB97C; &#xC81C;&#xB300;&#xB85C; &#xD558;&#xC9C0; &#xC54A;&#xC744; &#xACBD;&#xC6B0; &#xBA54;&#xBAA8;&#xB9AC; &#xB204;&#xC218;&#xC758; &#xBB38;&#xC81C;&#xAC00; &#xC0DD;&#xAE40;.</li>
+</ul>
+<h5 id="1&#xCC28;&#xC6D0;-&#xBC30;&#xC5F4;-&#xBA54;&#xBAA8;&#xB9AC;-&#xB3D9;&#xC801;-&#xD560;&#xB2F9;">1&#xCC28;&#xC6D0; &#xBC30;&#xC5F4; &#xBA54;&#xBAA8;&#xB9AC; &#xB3D9;&#xC801; &#xD560;&#xB2F9;</h5>
+<pre><code class="lang-c"><span class="hljs-comment">/* &#xB3D9;&#xC801; &#xD560;&#xB2F9;&#xC758; &#xC774;&#xC6A9; */</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">int</span> argc, <span class="hljs-keyword">char</span> **argv)</span> </span>{
+    <span class="hljs-keyword">int</span> student;
+    <span class="hljs-keyword">int</span> i, input;
+    <span class="hljs-keyword">int</span>* score;
+    <span class="hljs-keyword">int</span> sum = <span class="hljs-number">0</span>;
+
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#xD559;&#xC0DD;&#xC758; &#xC218;&#xB294;?&quot;</span>);
+    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;student);
+
+    score = (<span class="hljs-keyword">int</span>*)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">int</span>) * student);
+
+    <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; student; i++) {
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#xD559;&#xC0DD; %d&#xC758; &#xC810;&#xC218;&quot;</span>, i);
+        <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;input);
+
+        score[i] = input;
+    }
+
+    <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; student; i++) {
+        sum += score[i];
+    }
+
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#xC804;&#xCCB4; &#xD559;&#xC0DD; &#xD3C9;&#xADE0; &#xC810;&#xC218; : %d \n&quot;</span>, sum / student);
+    <span class="hljs-built_in">free</span>(score);
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h5 id="2&#xCC28;&#xC6D0;-&#xBC30;&#xC5F4;-&#xBA54;&#xBAA8;&#xB9AC;-&#xB3D9;&#xC801;-&#xD560;&#xB2F9;">2&#xCC28;&#xC6D0; &#xBC30;&#xC5F4; &#xBA54;&#xBAA8;&#xB9AC; &#xB3D9;&#xC801; &#xD560;&#xB2F9;</h5>
+<ul>
+<li>&#xBA54;&#xBAA8;&#xB9AC; &#xD574;&#xC81C;&#xB294; &#xD560;&#xB2F9; &#xC21C;&#xC11C;&#xC640; &#xC815;&#xBC18;&#xB300;&#xB85C; &#xC2E4;&#xD589;&#xD55C;&#xB2E4;.</li>
+</ul>
+<pre><code class="lang-c"><span class="hljs-comment">/* 2&#xCC28;&#xC6D0; &#xBC30;&#xC5F4;&#xC758; &#xB3D9;&#xC801; &#xD560;&#xB2F9; */</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">int</span> argc, <span class="hljs-keyword">char</span> **argv)</span> </span>{
+    <span class="hljs-keyword">int</span> i;
+    <span class="hljs-keyword">int</span> x, y;
+    <span class="hljs-keyword">int</span>** arr;
+
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#xC6B0;&#xB9AC;&#xB294; arr[x][y]&#xB97C; &#xB9CC;&#xB4E4; &#xAC83;&#xC785;&#xB2C8;&#xB2E4;. \n&quot;</span>);
+    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d %d&quot;</span>, &amp;x, &amp;y);
+
+    arr = (<span class="hljs-keyword">int</span>**)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">int</span>) * x);
+    <span class="hljs-comment">// int* &#xD615;&#xC758; &#xC6D0;&#xC18C;&#xB97C; x&#xAC1C; &#xAC00;&#xC9C0;&#xB294; 1&#xCC28;&#xC6D0; &#xBC30;&#xC5F4; &#xC0DD;&#xC131;</span>
+
+    <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; x; i++) {
+        arr[i] = (<span class="hljs-keyword">int</span>*)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">int</span>) * y);
+    }
+
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#xC0DD;&#xC131; &#xC644;&#xB8CC;! \n&quot;</span>);
+
+    <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; x; i++) {
+        <span class="hljs-built_in">free</span>(arr[i]);
+    }
+
+    <span class="hljs-built_in">free</span>(arr);
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<pre><code class="lang-c"><span class="hljs-comment">/* 2&#xCC28;&#xC6D0; &#xBC30;&#xC5F4;&#xC758; &#xB3D9;&#xC801; &#xD560;&#xB2F9; */</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">get_average</span><span class="hljs-params">(<span class="hljs-keyword">int</span>** arr, <span class="hljs-keyword">int</span> numStudent, <span class="hljs-keyword">int</span> numSubject)</span></span>;
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">int</span> argc, <span class="hljs-keyword">char</span> **argv)</span> </span>{
+    <span class="hljs-keyword">int</span> i, j, input, sum = <span class="hljs-number">0</span>;
+    <span class="hljs-keyword">int</span> subject, students;
+    <span class="hljs-keyword">int</span>** arr;
+
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#xACFC;&#xBAA9; &#xC218; :&quot;</span>);
+    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;subject);
+
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#xD559;&#xC0DD; &#xC218; :&quot;</span>);
+    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;students);
+
+    arr = (<span class="hljs-keyword">int</span>**)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">int</span>) * subject);
+    <span class="hljs-comment">// int* &#xD615;&#xC758; &#xC6D0;&#xC18C;&#xB97C; x&#xAC1C; &#xAC00;&#xC9C0;&#xB294; 1&#xCC28;&#xC6D0; &#xBC30;&#xC5F4; &#xC0DD;&#xC131;</span>
+
+    <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; subject; i++) {
+        arr[i] = (<span class="hljs-keyword">int</span>*)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">int</span>) * students);
+    }
+
+    <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; subject; i++) {
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#xACFC;&#xBAA9; %d &#xC810;&#xC218; : \n&quot;</span>, i);
+        <span class="hljs-keyword">for</span> (j = <span class="hljs-number">0</span>; j &lt; students; j++) {
+            <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#xD559;&#xC0DD; %d &#xC810;&#xC218; &#xC785;&#xB825; : \n&quot;</span>, j);
+            <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;input);
+
+            arr[i][j] = input;
+        }
+    }
+
+    get_average(arr, students, subject);
+
+    <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; subject; i++) {
+        <span class="hljs-built_in">free</span>(arr[i]);
+    }
+
+    <span class="hljs-built_in">free</span>(arr);
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">get_average</span><span class="hljs-params">(<span class="hljs-keyword">int</span> **arr, <span class="hljs-keyword">int</span> numStudent, <span class="hljs-keyword">int</span> numSubject)</span> </span>{
+    <span class="hljs-comment">// **arr&#xB294; &#xC0AC;&#xC2E4;&#xC0C1; 1&#xCC28;&#xC6D0; &#xBC30;&#xC5F4;&#xC774;&#xAE30; &#xB54C;&#xBB38;&#xC5D0; (*arr)[3] &#xCC98;&#xB7FC; &#xC548;&#xC368;&#xB3C4; &#xB428;,</span>
+    <span class="hljs-keyword">int</span> i, j, sum;
+
+    <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; numSubject; i++) {
+        sum = <span class="hljs-number">0</span>;
+        <span class="hljs-keyword">for</span> (j = <span class="hljs-number">0</span>; j &lt; numStudent; j++) {
+            sum += arr[i][j];
+        }
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#xACFC;&#xBAA9; %d &#xD3C9;&#xADE0; &#xC810;&#xC218; : %d \n&quot;</span>, i, sum / numStudent);
+    }
+}
+</code></pre>
+<h3 id="20-2-&#xB3D9;&#xB3D9;&#xB3D9;-&#xBA54;&#xBAA8;&#xB9AC;-&#xB3D9;&#xC801;-&#xD560;&#xB2F9;--&#xBA54;&#xBAA8;&#xB9AC;-&#xAC16;&#xACE0;-&#xB180;&#xAE30;">20-2. &#xB3D9;&#xB3D9;&#xB3D9; &#xBA54;&#xBAA8;&#xB9AC; &#xB3D9;&#xC801; &#xD560;&#xB2F9; + &#xBA54;&#xBAA8;&#xB9AC; &#xAC16;&#xACE0; &#xB180;&#xAE30;</h3>
+<h5 id="&#xAD6C;&#xC870;&#xCCB4;&#xC758;-&#xB3D9;&#xC801;-&#xD560;&#xB2F9;">&#xAD6C;&#xC870;&#xCCB4;&#xC758; &#xB3D9;&#xC801; &#xD560;&#xB2F9;</h5>
+<pre><code class="lang-c"><span class="hljs-comment">/* &#xAD6C;&#xC870;&#xCCB4; &#xB3D9;&#xC801; &#xD560;&#xB2F9; */</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span>
+
+<span class="hljs-keyword">struct</span> Something {
+    <span class="hljs-keyword">int</span> a, b;
+};
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">struct</span> Something* arr;
+    <span class="hljs-keyword">int</span> size, i;
+
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#xC6D0;&#xD558;&#xB294; &#xAD6C;&#xC870;&#xCCB4; &#xBC30;&#xC5F4;&#xC758; &#xD06C;&#xAE30; : &quot;</span>);
+    <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;size);
+
+    arr = (<span class="hljs-keyword">struct</span> Something *)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">struct</span> Something) * size);
+
+    <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; size; i++) {
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;arr[%d].a : &quot;</span>, i);
+        <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;arr[i].a);
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;arr[%d].b : &quot;</span>, i);
+        <span class="hljs-built_in">scanf</span>(<span class="hljs-string">&quot;%d&quot;</span>, &amp;arr[i].b);
+    }
+
+    <span class="hljs-keyword">for</span> (i = <span class="hljs-number">0</span>; i &lt; size; i++) {
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;arr[%d].a = %d, arr[%d].b = %d \n&quot;</span>, i, arr[i].a, i, arr[i].b);
+    }
+
+    <span class="hljs-built_in">free</span>(arr);
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+</code></pre>
+<h5 id="&#xB178;&#xB4DC;">&#xB178;&#xB4DC;</h5>
+<ul>
+<li>&#xB3D9;&#xC801; &#xD560;&#xB2F9;&#xC758; &#xD55C;&#xACC4; : &#xC0AC;&#xC6A9;&#xC790;&#xAC00; &#xC6D0;&#xD558;&#xB294; &#xB9CC;&#xD07C;&#xC758; &#xD06C;&#xAE30;&#xB97C; &#xD560;&#xB2F9;&#xBC1B;&#xC744; &#xC218; &#xC788;&#xC9C0;&#xB9CC;, &#xCD94;&#xAC00;&#xC801;&#xC778; &#xB370;&#xC774;&#xD130;&#xAC00; &#xC0DD;&#xAE38; &#xACBD;&#xC6B0; &#xAE30;&#xC874;&#xC758; &#xACF5;&#xAC04;&#xC744; &#xC804;&#xBD80; &#xC0C8;&#xB85C; &#xC7A1;&#xC544;&#xC57C; &#xD55C;&#xB2E4;&#xB294; &#xBB38;&#xC81C;&#xAC00; &#xBC1C;&#xC0DD;&#xD55C;&#xB2E4;.</li>
+<li>&#xB178;&#xB4DC; : &#xB370;&#xC774;&#xD130; &#xB4A4;&#xC5D0; &#xB2E4;&#xC74C; &#xB178;&#xB4DC;&#xB97C; &#xAC00;&#xB9AC;&#xD0A4;&#xB294; &#xD3EC;&#xC778;&#xD130;&#xB97C; &#xCD94;&#xAC00;&#xD55C;&#xB2E4;. &#xBC30;&#xC5F4; &#xC911;&#xAC04;&#xC5D0; &#xC0C8; &#xC6D0;&#xC18C;&#xB97C; &#xC9D1;&#xC5B4;&#xB123;&#xB294; &#xAC83;&#xC774; &#xAC00;&#xB2A5;&#xD574;&#xC9C4;&#xB2E4;.</li>
+<li>&#xB178;&#xB4DC;&#xC758; &#xC7A5;&#xC810; : &#xBC30;&#xC5F4;&#xACFC; &#xB2EC;&#xB9AC; &#xCD94;&#xAC00;/&#xC0AD;&#xC81C;/&#xC0BD;&#xC785;&#xC774; &#xD3B8;&#xB9AC;&#xD558;&#xB2E4;.</li>
+<li>&#xB178;&#xB4DC;&#xC758; &#xB2E8;&#xC810; : N&#xBC88;&#xC9F8; &#xC6D0;&#xC18C;&#xC5D0; &#xC811;&#xADFC;&#xD558;&#xAE30; &#xC704;&#xD574; &#xD5E4;&#xB4DC;&#xB85C;&#xBD80;&#xD130; N&#xBC88;&#xC9F8;&#xAE4C;&#xC9C0; &#xC77C;&#xC77C;&#xD788; &#xCC3E;&#xC544;&#xC57C; &#xD55C;&#xB2E4;.</li>
+</ul>
+<pre><code class="lang-c"><span class="hljs-keyword">struct</span> Node {
+    <span class="hljs-keyword">int</span> data; <span class="hljs-comment">/* &#xB370;&#xC774;&#xD130; */</span>
+    <span class="hljs-keyword">struct</span> Node* nextNode; <span class="hljs-comment">/* &#xB2E4;&#xC74C; &#xB178;&#xB4DC;&#xB97C; &#xAC00;&#xB9AC;&#xD0A4;&#xB294; &#xBD80;&#xBD84; */</span>
+};
+</code></pre>
+<pre><code class="lang-c"><span class="hljs-comment">/* &#xB178;&#xB4DC; */</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdlib.h&gt;</span></span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">PrintNodeFrom</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> Node* from)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">struct</span> Node* <span class="hljs-title">InsertNode</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> Node* current, <span class="hljs-keyword">int</span> data)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">DestroyNode</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> Node* destroy, <span class="hljs-keyword">struct</span> Node* head)</span></span>;
+<span class="hljs-function"><span class="hljs-keyword">struct</span> Node* <span class="hljs-title">CreateNode</span><span class="hljs-params">(<span class="hljs-keyword">int</span> data)</span></span>;
+
+<span class="hljs-keyword">struct</span> Node {
+    <span class="hljs-keyword">int</span> data; <span class="hljs-comment">/* &#xB370;&#xC774;&#xD130; */</span>
+    <span class="hljs-keyword">struct</span> Node* nextNode; <span class="hljs-comment">/* &#xB2E4;&#xC74C; &#xB178;&#xB4DC;&#xB97C; &#xAC00;&#xB9AC;&#xD0A4;&#xB294; &#xBD80;&#xBD84; */</span>
+};
+
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">struct</span> Node* Node1 = CreateNode(<span class="hljs-number">100</span>);
+    <span class="hljs-keyword">struct</span> Node* Node2 = InsertNode(Node1, <span class="hljs-number">200</span>);
+    <span class="hljs-keyword">struct</span> Node* Node3 = InsertNode(Node2, <span class="hljs-number">300</span>);
+    <span class="hljs-keyword">struct</span> Node* Node4 = InsertNode(Node2, <span class="hljs-number">400</span>);
+
+    PrintNodeFrom(Node1);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-comment">/* from&#xC774; NULL&#xC77C; &#xB54C;&#xAE4C;&#xC9C0;, &#xC989; &#xB05D; &#xBD80;&#xBD84;&#xC5D0; &#xB3C4;&#xB2EC;&#xD560; &#xB54C;&#xAE4C;&#xC9C0; &#xCD9C;&#xB825;&#xD558;&#xB294; &#xD568;&#xC218; */</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">PrintNodeFrom</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> Node* from)</span> </span>{
+    <span class="hljs-keyword">while</span> (from) {
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;&#xB178;&#xB4DC;&#xC758; &#xB370;&#xC774;&#xD130; : %d \n&quot;</span>, from-&gt;data);
+        from = from-&gt;nextNode;
+    }
+}
+
+<span class="hljs-comment">/* current &#xB77C;&#xB294; &#xB178;&#xB4DC; &#xB4A4;&#xC5D0; &#xB178;&#xB4DC;&#xB97C; &#xC0C8;&#xB85C; &#xB9CC;&#xB4E4;&#xC5B4; &#xB123;&#xB294; &#xD568;&#xC218; */</span>
+<span class="hljs-function"><span class="hljs-keyword">struct</span> Node* <span class="hljs-title">InsertNode</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> Node* current, <span class="hljs-keyword">int</span> data)</span> </span>{
+    <span class="hljs-keyword">struct</span> Node* after = current-&gt;nextNode;
+
+    <span class="hljs-keyword">struct</span> Node* newNode = (<span class="hljs-keyword">struct</span> Node*)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">struct</span> Node));
+
+    newNode-&gt;data = data;
+    newNode-&gt;nextNode = after;
+
+    current-&gt;nextNode = newNode;
+
+    <span class="hljs-keyword">return</span> newNode;
+}
+
+<span class="hljs-comment">/* &#xC120;&#xD0DD;&#xB41C; &#xB178;&#xB4DC;&#xB97C; &#xD30C;&#xAD34;&#xD558;&#xB294; &#xD568;&#xC218; */</span>
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">DestroyNode</span><span class="hljs-params">(<span class="hljs-keyword">struct</span> Node* destroy, <span class="hljs-keyword">struct</span> Node* head)</span> </span>{
+    <span class="hljs-keyword">struct</span> Node* next = head;
+
+    <span class="hljs-keyword">if</span> (destroy == head) {
+        <span class="hljs-built_in">free</span>(destroy);
+        <span class="hljs-keyword">return</span>;
+    }
+
+    <span class="hljs-keyword">while</span> (next) {
+        <span class="hljs-keyword">if</span> (next-&gt;nextNode == destroy) {
+            next-&gt;nextNode = destroy-&gt;nextNode;
+        }
+        next = next-&gt;nextNode;
+    }
+    <span class="hljs-built_in">free</span>(destroy);
+}
+
+<span class="hljs-comment">/* &#xC0C8; &#xB178;&#xB4DC;&#xB97C; &#xB9CC;&#xB4DC;&#xB294; &#xD568;&#xC218; */</span>
+<span class="hljs-function"><span class="hljs-keyword">struct</span> Node* <span class="hljs-title">CreateNode</span><span class="hljs-params">(<span class="hljs-keyword">int</span> data)</span> </span>{
+    <span class="hljs-keyword">struct</span> Node* newNode = (<span class="hljs-keyword">struct</span> Node*)<span class="hljs-built_in">malloc</span>(<span class="hljs-keyword">sizeof</span>(<span class="hljs-keyword">struct</span> Node));
+
+    newNode-&gt;data = data;
+    newNode-&gt;nextNode = <span class="hljs-literal">NULL</span>;
+
+    <span class="hljs-keyword">return</span> newNode;
+}
+</code></pre>
+<h5 id="&#xBA54;&#xBAA8;&#xB9AC;-&#xAD00;&#xB828;-&#xD568;&#xC218;">&#xBA54;&#xBAA8;&#xB9AC; &#xAD00;&#xB828; &#xD568;&#xC218;</h5>
+<ul>
+<li><p><code>string.h</code> &#xC5D0; &#xC815;&#xC758;&#xB418;&#xC5B4; &#xC788;&#xB2E4;.</p>
+</li>
+<li><p><code>memcpy</code> :  &#xBA54;&#xBAA8;&#xB9AC;&#xB97C; &#xBCF5;&#xC0AC;</p>
+<ul>
+<li><code>memcpy(&#xBAA9;&#xC801;&#xC9C0;, &#xC6D0;&#xBCF8;, &#xBCF5;&#xC0AC;&#xD560;&#xAE38;&#xC774;)</code> &#xD615;&#xD0DC;&#xB85C; &#xC0AC;&#xC6A9;.</li>
+</ul>
+</li>
+<li><code>memmove</code> : &#xBA54;&#xBAA8;&#xB9AC;&#xC758; &#xC77C;&#xBD80;&#xB97C; &#xC62E;&#xAE40;<ul>
+<li><code>memmove(&#xCD94;&#xAC00;&#xD560; &#xC704;&#xCE58;, &#xBCF5;&#xC0AC;&#xD560; &#xC704;&#xCE58;, &#xCD94;&#xAC00;&#xD560; &#xAE38;&#xC774;)</code> &#xD615;&#xD0DC;&#xB85C; &#xC0AC;&#xC6A9;.</li>
+</ul>
+</li>
+<li><code>memcmp</code> : 2&#xAC1C;&#xC758; &#xBA54;&#xBAA8;&#xB9AC;&#xB97C; &#xBE44;&#xAD50;<ul>
+<li><code>memcmp(&#xBE44;&#xAD50;&#xB300;&#xC0C1;1, &#xBE44;&#xAD50;&#xB300;&#xC0C1;2, &#xBE44;&#xAD50;&#xD560; byte &#xAE38;&#xC774;)</code> &#xD615;&#xD0DC;&#xB85C; &#xC0AC;&#xC6A9;.</li>
+</ul>
+</li>
+</ul>
+<pre><code class="lang-c"><span class="hljs-comment">/* memcpy &#xD568;&#xC218; */</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;string.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">char</span> str[<span class="hljs-number">50</span>] = <span class="hljs-string">&quot;I love Chewing C hahaha&quot;</span>;
+    <span class="hljs-keyword">char</span> str2[<span class="hljs-number">50</span>];
+    <span class="hljs-keyword">char</span> str3[<span class="hljs-number">50</span>];
+
+    <span class="hljs-built_in">memcpy</span>(str2, str, <span class="hljs-built_in">strlen</span>(str) + <span class="hljs-number">1</span>);
+    <span class="hljs-built_in">memcpy</span>(str3, <span class="hljs-string">&quot;hello&quot;</span>, <span class="hljs-number">6</span>);
+
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%s \n&quot;</span>, str);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%s \n&quot;</span>, str2);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%s \n&quot;</span>, str3);
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-comment">// answer</span>
+I love Chewing C hahaha
+I love Chewing C hahaha
+hello
+</code></pre>
+<pre><code class="lang-c"><span class="hljs-comment">/* memmove &#xD568;&#xC218; */</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;string.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">char</span> str[<span class="hljs-number">50</span>] = <span class="hljs-string">&quot;I love Chewing C hahaha&quot;</span>;
+
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%s \n&quot;</span>, str);
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;memmove &#xC774;&#xD6C4; \n&quot;</span>);
+
+    memmove(str + <span class="hljs-number">23</span>, str + <span class="hljs-number">17</span>, <span class="hljs-number">6</span>);
+
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;%s \n&quot;</span>, str);
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-comment">// answer</span>
+I love Chewing C hahaha
+memmove &#xC774;&#xD6C4;
+I love Chewing C hahahahahaha
+</code></pre>
+<pre><code class="lang-c"><span class="hljs-comment">/* memcmp&#xD568;&#xC218; */</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;string.h&gt;</span></span>
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{
+    <span class="hljs-keyword">char</span> arr[<span class="hljs-number">10</span>] = { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+    <span class="hljs-keyword">char</span> arr2[<span class="hljs-number">10</span>] = { <span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>, <span class="hljs-number">5</span> };
+
+    <span class="hljs-keyword">if</span> (<span class="hljs-built_in">memcmp</span>(arr, arr2, <span class="hljs-number">5</span>) == <span class="hljs-number">0</span>) {
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;arr&#xC640; arr2&#xB294; &#xC77C;&#xCE58;! \n&quot;</span>);
+    }
+    <span class="hljs-keyword">else</span> {
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;arr&#xC640; arr2&#xB294; &#xBD88;&#xC77C;&#xCE58;! \n&quot;</span>);
+    }
+
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}
+
+<span class="hljs-comment">// answer</span>
+arr&#xC640; arr2&#xB294; &#xC77C;&#xCE58;!
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="cnote-08.html" class="navigation navigation-prev " aria-label="Previous page: 17강 변수 및 데이터 세그먼트 / 18강 파일 뽀개기">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="cnote-10.html" class="navigation navigation-next " aria-label="Next page: 21강 매크로 함수, 인라인 함수 / 22강 잡다한 키워드들">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"19강 main함수의 인자, 텅 빈 void형 / 20강 메모리 동적 할당","level":"10.9","depth":1,"next":{"title":"21강 매크로 함수, 인라인 함수 / 22강 잡다한 키워드들","level":"10.10","depth":1,"path":"posts/C/cnote-10.md","ref":"posts/C/cnote-10.md","articles":[]},"previous":{"title":"17강 변수 및 데이터 세그먼트 / 18강 파일 뽀개기","level":"10.8","depth":1,"path":"posts/C/cnote-08.md","ref":"posts/C/cnote-08.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{"BASE_URL":"https://sumim00.github.io/TIL/"},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"posts/C/cnote-09.md","mtime":"2020-01-15T09:00:35.782Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-01-19T06:37:44.088Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

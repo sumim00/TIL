@@ -91,15 +91,19 @@
 
 
 
-## C
+## 씹어먹는 C언어 강의노트
 
-- [씹어먹는 C언어 강의노트 1~4강](posts/C/cnote-01.md)
-- [씹어먹는 C언어 강의노트 5~7강](posts/C/cnote-02.md)
-- [씹어먹는 C언어 강의노트 8~10강](posts/C/cnote-03.md)
-- [씹어먹는 C언어 강의노트 11~12강](posts/C/cnote-04.md)
-- [씹어먹는 C언어 강의노트 13~14강](posts/C/cnote-05.md)
-- [씹어먹는 C언어 강의노트 15강](posts/C/cnote-06.md)
-- [씹어먹는 C언어 강의노트 16강](posts/C/cnote-07.md)
+- [2강 C언어 맛보기 / 3강 변수 / 4강 연산자](posts/C/cnote-01.md)
+- [5강 문자 입력 받기 / 6강 if문 / 7강 for,while문](posts/C/cnote-02.md)
+- [9강 switch문 / 10강 형 변환](posts/C/cnote-03.md)
+- [11강 배열과 상수, 12 포인터](posts/C/cnote-04.md)
+- [13강 마술 상자 함수](posts/C/cnote-05.md)
+- [15강 일로와봐, 문자열](posts/C/cnote-06.md)
+- [16강 모아 모아 구조체](posts/C/cnote-07.md)
+- [17강 변수 및 데이터 세그먼트 / 18강 파일 뽀개기](posts/C/cnote-08.md)
+- [19강 main함수의 인자, 텅 빈 void형 / 20강 메모리 동적 할당](posts/C/cnote-09.md)
+- [21강 매크로 함수, 인라인 함수 / 22강 잡다한 키워드들](posts/C/cnote-10.md)
+- [23강 파일하고 이야기하기](posts/C/cnote-11.md)
 
 
 
@@ -114,5 +118,7 @@
   * [이미지 스프라이트](posts/etc/image-sprite.md)
   * [FOUC](posts/etc/FOUC.md)
   * [gatsby](posts/etc/gatsby.md)
+  * [Linux 커맨드](posts/etc/linux_command.md)
+  * [vim 튜토리얼 정리](posts/etc/vim_tutor.md)
 
 
